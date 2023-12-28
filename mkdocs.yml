@@ -3,7 +3,7 @@ site_name: HDZero VTX Docs
 theme:
   name: readthedocs
   locale: en
-  navigation_depth: 2
+  navigation_depth: 3
   include_sidebar: false
   icon:
     repo: fontawesome/brands/git
@@ -11,7 +11,7 @@ theme:
 plugins:
   - search:
       separator: '[\s\-\.]+'
-      min_search_length: 2
+      min_search_length: 3
       indexing: 'full'
 
 extra:
