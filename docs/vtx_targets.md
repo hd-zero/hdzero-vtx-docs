@@ -82,7 +82,7 @@ This VTX does not support Smart Audio or Tramp.
 
 **Notes:**
 
-- Read first **General Consideration for VTX installation**
+- Read first: **General Consideration for VTX installation**
 - Soft mount
 - Pay extra attention not to damage the small components when trying to remove the serrate corner
 
@@ -103,26 +103,28 @@ This VTX includes M3/M2 gummies for soft mounting, and zip ties for antenna rete
 
 <img src="https://raw.githubusercontent.com/ligenxxxx/hdzero-vtx-docs/main/site/img/HDZero_WhoopLite_intro.png" style="width:100">
 
-| 1 | MIPI Connector            |
-| -: | :------------------------ |
-| 2 | Status LEDs               |
-| 3 | Power/UART/SA solder pads |
-| 4 | u.FL Connector            |
-| 5 | Protection Case           |
-| 6 | Protection case clipper   |
+| No. | Function                  |
+| :-: | :------------------------ |
+|  1  | MIPI Connector            |
+|  2  | Status LEDs               |
+|  3  | Power/UART/SA solder pads |
+|  4  | u.FL Connector            |
+|  5  | Protection Case           |
+|  6  | Protection case clipper   |
 
 Solder pad:
 
-| G | Ground              |
+| Pad | Function            |
 | :-: | :------------------ |
-| V | 2.8V-13V            |
+|  G  | Ground              |
+|  V  | 2.8V-13V            |
 | RX | FC.TX               |
 | TX | FC.RX               |
 | SA | FC.SA(TX), Optional |
 
 **Notes:**
 
-- Read first **General Consideration for VTX installation**
+- Read first: **General Consideration for VTX installation**
 - This VTX does not support using keypad to tune channel and RF output power level. Ir is designed to work with flight controller.
 
 ### Race V1
