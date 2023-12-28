@@ -224,9 +224,31 @@ Use the included zip-tie to secure MIPI cable and protect MIPI connector.
 - Read first: **General Consideration for VTX installation**
 - **Make sure to use a wider top plate to fully c****over this VTX for protection.**
 
-### Race V3
+### HDZero Race V3 Video Transmitter
 
-...
+Designed for FPV racing, the HDZero Race V3 VTX is our 3rd generation digital video transmitter. With a voltage range starting at 4V, it can be powered by the 5V 1.5A regulator of most FC's or up to 12V for FC's that include a HD VTX plug. It is small (28x32x5mm) and light (5.5 grams). With a width of only 28mm, the VTX is now a similar width to many FC's, which improves durability and reduces weight. The antenna is securely attached with a metal bar and screws. No soldering needed – just plug the wire harness into a compatible HD-ready FC.
+
+The HDZero Race V3 VTX is designed with durability in mind, rather than weight. It is made with a 1.6mm thick PCB, in comparison to the 1.0mm PCB used in the Whoop lite VTX. Moreover, it uses more large package size components for stability consideration. For the smaller components, an additional glue coating is applied to increase crash protection.
+
+The HDZero Race V3 VTX offers high-quality video in 540p90, 720p60 and 1080p30 resolutions with 25/200mW switchable power on 5.8GHz.
+
+<img src="https://raw.githubusercontent.com/ligenxxxx/hdzero-vtx-docs/main/site/img/HDZero_RaceV3_intro_1.png" style="width:100">
+
+| No. | Description                                                                                                                                                    |
+| :-: | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|  1  | VTX-R3 board                                                                                                                                                   |
+|  2  | SmartAudio/Tramp (Optional)                                                                                                                                    |
+|  3  | Wire harness to connect with FC<br />Red = BEC 4-12V<br />Black = GND<br />White = VTX UART TX (Connect to FC RX)<br />Yellow = VTX UART RX (Connect to FC TX) |
+|  4  | Rubber Grommet (M4 to M3)                                                                                                                                      |
+|  5  | Metal bar and screws for securing antenna                                                                                                                      |
+
+#### Connection
+
+<img src="https://raw.githubusercontent.com/ligenxxxx/hdzero-vtx-docs/main/site/img/HDZero_RaceV3_intro_2.png" style="width:100">
+
+The right figure shows the typical connection with FC supports MSP VTX protocol.
+
+The Race V3 supports direct connect with Ghost RX via its SA/Tramp port(TBD)
 
 ### Freestyle V1
 
