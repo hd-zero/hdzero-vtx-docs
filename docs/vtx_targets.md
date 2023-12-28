@@ -86,7 +86,7 @@ This VTX does not support Smart Audio or Tramp.
 - Soft mount
 - Pay extra attention not to damage the small components when trying to remove the serrate corner
 
-### HDZero Whoop List Video Transmitter
+### HDZero Whoop Lite Video Transmitter
 
 The HDZero Whoop lite VTX is a digital HD 720p 60fps video transmitter capable of delivering up to 200mw on 5.8GHz.
 
