@@ -1,0 +1,31 @@
+site_name: HDZero VTX Docs
+
+theme:
+  name: readthedocs
+  locale: en
+  navigation_depth: 2
+  include_sidebar: false
+  icon:
+    repo: fontawesome/brands/git
+
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+      min_search_length: 2
+      indexing: 'full'
+
+extra:
+  version: v2.0
+
+repo_url: https://github.com/ligenxxxx/hdzero-docs
+repo_name: 'Github'
+edit_uri: 'blob/main/docs/'
+
+nav:
+  - Home: 'index.md'
+  - Introduction: 'index.md'
+  - VTX Target: 'vtx_targets.md'
+  - CameraTarget: 'camera_targets.md'
+  - User Manual: 'user_manual.md'
+  - Troubleshoot: 'troubleshoot.md'
+  - About: 'about.md'
