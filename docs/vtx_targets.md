@@ -76,7 +76,7 @@ the small components around the holes.**
 
 This VTX is designed for low-speed whoop application. Compared to the other HDZero VTXes, it is more vulnerable to be damaged by crash due to: (1) the UFL connector is easily peeled off due to no antenna retention, and (2) it is not easy for soft mounting. Though the VTX can be mounted on a racing and other high-speed quad, it is highly recommended to consider HDZero Race (V1 or V2) for such application.
 
-This VTX does not support Smart Audio or Tramp.
+This VTX does not support SmartAudio or Tramp.
 
 <img src="https://raw.githubusercontent.com/ligenxxxx/hdzero-vtx-docs/main/site/img/HDZero_Whoop_intro.png" style="width:100">
 
