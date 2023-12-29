@@ -22,10 +22,9 @@ repo_name: 'Github'
 edit_uri: 'blob/main/docs/'
 
 nav:
-  - Home: 'index.md'
-  - Introduction: 'index.md'
+  - Home: 'home.md'
   - VTX Target: 'vtx_targets.md'
   - Camera Target: 'camera_targets.md'
-  - User Manual: 'user_manual.md'
-  - Troubleshoot: 'troubleshoot.md'
+  - User Manual: 'vtx_user_manual.md'
+  - Troubleshoot: 'vtx_troubleshoot.md'
   - About: 'about.md'
