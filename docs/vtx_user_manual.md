@@ -23,7 +23,7 @@ Working status indicator light.
 - ON/OFF @ 1hz = heat protection
 - ON/OFF @ 4hz = 0MW pitt mode active
 - ON/OFF @ 2hz = 0.1mw pitt mode active
-- Flashes quickly 2 times per second = RF chip(dm6300) failure
+- 2 times per second with a pause between each set of 2 flashes = RF chip(dm6300) failure
 - ON solid = VTX operation normal
 
 ## Keypad
