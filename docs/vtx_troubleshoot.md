@@ -186,6 +186,7 @@ Make sure pit mode is off
 - Check whether the PA is damaged.
   - For Freestyle V1 VTX, when the power is off, measure whether the two test points named 5V0 on the front are short-circuited to ground. If short-circuited, it means the PA is damaged.
     ![img](https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_FreestyleV1_PD.png)
+  - For Freestyle V2 VTX, If after powering on, the red light in the position shown below lights up, it indicates that the PA has been damaged.![img](https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_FreestyleV1_PD.png)
   - For other VTXes. Measure the voltage from test point PD to GND in the power-on state. Generally, when PD is less than 0.2V, the PA is considered to be working abnormally.
     - HDZero Whoop VTX
       ![img](https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_Whoop_PD.png)
