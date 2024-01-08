@@ -87,30 +87,43 @@ All HDZero VTXes have the following settings for its RF power level management. 
 
 <img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/vtx_menu.png" style="width:100">
 
-- **CHANNEL**
-  - All VTXes support R1-R8, E1, F1, F2 and F4 channels. You will get an additional 8 channels L1-L8 if you unlock the lowband.
-- **POWER**
-  - The desired RF power level is selectable between 25mW, 200mW (and 500mW or MAX for certain VTXes). The actual RF power level depends on the following settings and FC status.
-- **LP_MODE**
-  - **OFF:** The output RF power will be set to *POWER* setting.
-  - **ON:**  If *PIT_MODE* is OFF and the quad is disarmed, the RF power level will be forced to 25mW regardless of **POWER** setting.The output RF power will be set to *POWER* setting when quad is armed.
-  - **1ST**: If *PIT_MODE* is OFF, the RF power level will be forced to 25mW regardless of *POWER* setting when QUAD is power on, The output RF power will be set to *POWER* setting when QUAD is armed.
-  - **Note that after first arm, the vtx will not enter lp mode again until vbat power is reset.**
-- **PIT_MODE**
-  - **OFF:** The output RF power will be set to *POWER* setting.
-  - **P1MW:** The output RF power will be 0.1mW (in order to not interfere with other pilots) in this mode. If the quad is armed, RF output power will be automatically set to the *POWER* within seconds.
-  - **0MW:** There will be zero RF output in this mode. If quad is armed, RF output power will be automatically set to *POWER* within seconds.
-  - **Note that after first arm, the vtx will not enter pit mode again until vbat power is reset.**
-- **OFFSET_25MW**
-  - It is to fine tune the RF output power to be exactly 25mW. The range is [-10:10], and step size is about 0.3dB per step.
-- **TEAM_RACE**
-  - **OFF:** The RF power of VTXs after power-on is determined by other settings.
-  - **MODE1:** VTX RF remains off (0mW) after power-up, and exits 0mW under the following conditions: 1. Quad is armed. 2. Exit 0mw mode through stick command. 3. Configure VTX power to non-0mW through FC UART or SmartAudio. If the UART communication between VTX and FC is disconnected, VTX will turn off the RF until UART communication is restored and repower the VTX.
-  - **MODE2**: VTX RF remains off(0mW) after power-up, and exits 0mW under the following conditions: 1. Quad is armed. 2. Exit 0mw mode through stick command. 3. Configure VTX power to non-0mW through FC.
-- **SHORTCUTS**
-  - Two different stick commands are provided for switching or exiting 0mW. See the Stick Movement diagram for details.
+### CHANNEL
 
-**Notes:**
+- All VTXes support R1-R8, E1, F1, F2 and F4 channels. You will get an additional 8 channels L1-L8 if you unlock the lowband.
+
+### POWER
+
+- The desired RF power level is selectable between 25mW, 200mW (and 500mW or MAX for certain VTXes). The actual RF power level depends on the following settings and FC status.
+
+### LP_MODE
+
+- **OFF:** The output RF power will be set to *POWER* setting.
+- **ON:**  If *PIT_MODE* is OFF and the quad is disarmed, the RF power level will be forced to 25mW regardless of **POWER** setting.The output RF power will be set to *POWER* setting when quad is armed.
+- **1ST**: If *PIT_MODE* is OFF, the RF power level will be forced to 25mW regardless of *POWER* setting when QUAD is power on, The output RF power will be set to *POWER* setting when QUAD is armed.
+- **Note that after first arm, the vtx will not enter lp mode again until vbat power is reset.**
+
+### PIT_MODE
+
+- **OFF:** The output RF power will be set to *POWER* setting.
+- **P1MW:** The output RF power will be 0.1mW (in order to not interfere with other pilots) in this mode. If the quad is armed, RF output power will be automatically set to the *POWER* within seconds.
+- **0MW:** There will be zero RF output in this mode. If quad is armed, RF output power will be automatically set to *POWER* within seconds.
+- **Note that after first arm, the vtx will not enter pit mode again until vbat power is reset.**
+
+### OFFSET_25MW
+
+- It is to fine tune the RF output power to be exactly 25mW. The range is [-10:10], and step size is about 0.3dB per step.
+
+### TEAM_RACE
+
+- **OFF:** The RF power of VTXs after power-on is determined by other settings.
+- **MODE1:** VTX RF remains off (0mW) after power-up, and exits 0mW under the following conditions: 1. Quad is armed. 2. Exit 0mw mode through stick command. 3. Configure VTX power to non-0mW through FC UART or SmartAudio. If the UART communication between VTX and FC is disconnected, VTX will turn off the RF until UART communication is restored and repower the VTX.
+- **MODE2**: VTX RF remains off(0mW) after power-up, and exits 0mW under the following conditions: 1. Quad is armed. 2. Exit 0mw mode through stick command. 3. Configure VTX power to non-0mW through FC.
+
+### SHORTCUTS
+
+- Two different stick commands are provided for switching or exiting 0mW. See the Stick Movement diagram for details.
+
+### Note
 
 - HDZero VTX will still become hot even on P1mW mode. It is better to keep VTX on 0mW when it will be idle for a while. Though the receiver will not have live video on this mode, it will come back as soon as the quad is armed.
 - Use sticks shortcut to enter 0mW, and to exit 0mW mode.
