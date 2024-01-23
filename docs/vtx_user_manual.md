@@ -18,13 +18,19 @@ The VTX lights up when powered on and goes off when powered off. It will not fla
 
 Working status indicator light.
 
-- flicker 3x after boot indicates MSP signaling is detected.
-- OFF = camera lost (check camera and cabling)
-- ON/OFF @ 1hz = heat protection
-- ON/OFF @ 4hz = 0MW pitt mode active
-- ON/OFF @ 2hz = 0.1mw pitt mode active
-- 2 times per second with a pause between each set of 2 flashes = RF chip(dm6300) failure
-- ON solid = VTX operation normal
+- Flicker 3x after boot indicates MSP signaling is detected.
+
+- Specific modes are represented with patterns of long (1s) and short (1/4s) pulses, within a 4s timeframe
+
+- short --- short                       = Camera lost (check camera and cabling)
+- short --- short --- short             = Heat protection
+- short --- short --- short --- short   = RF chip(dm6300) failure
+- long --- short                        = 0mW mode
+- long --- short --- short              = Pit mode (1mW)
+- ON solid                              = VTX operation normal
+
+Note the first three in the list, are error cases and are checked ahead of any others, and will be displayed if in force.
+This means for example, that if the vtx is in heat protection mode, setting the board to 0mW will not be apparent.
 
 ## Keypad
 
