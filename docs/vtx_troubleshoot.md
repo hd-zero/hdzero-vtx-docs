@@ -17,7 +17,7 @@
 
 ##### 1). The red LED is off or unstable
 
-The red light is directly driven by the system's 5V power supply. If the red light is not lit stably, it is usually because there is a problem with the power supply.
+The red LED is directly driven by the system's 5V power supply. If the red LED is not lit and stable, it is usually because there is a problem with the power supply.
 
 - Make sure the voltage and maximum current of the power supply are within the specifications.
 - Check if any components are cracked.
@@ -25,43 +25,57 @@ The red light is directly driven by the system's 5V power supply. If the red lig
 
 ##### 2). The blue LED never lights up
 
-Your VTX 5680 chip starts correctly.
-
-When the 5680 is initializing, it will first configure the blue LED to be on to indicate that the 5680 mcu has started.
+When the 5680 is initializing, in normal operation, it will first configure the blue LED to be on to indicate that the 5680 mcu has started.  If it does not, check the following:
 
 - If you plug in the Quad battery while the FC is connected to the PC, the VTX may fail to boot although this does not happen often.
-- There may be a fault with your VTX's power supply system, you can use a multimeter to measure the voltage test power to verify it if you have the hardware knowledge.
+- There may be a fault with your VTX's power supply system, you can use a multimeter to measure the voltage test points to verify it if you have the hardware knowledge.
 
-##### 3). The blue light turns off after a few seconds after powering on
+##### 3). The blue LED stays on
 
-At the end of VTX initialization, if the camera is not detected, the blue light will go out. In particular, the foxeer digisight v3 camera cannot be detected but this does not affect the VTX output RF.
+Check the following:
 
-- Replace other camera or mipi cable.
-- Check whether the pins of the mipi socket are intact and ensure that the mipi cable is fastened.
-- Check whether the pins of the 5680 chip are clean.
-
-##### 4). The blue LED stays on
-
-- Replace other camera or mipi cable.
-- Check whether the pins of the mipi socket are intact and ensure that the mipi cable is fastened.
+- Replace other camera or MIPI cable.
+- Check whether the pins of the MIPI socket are clean and intact and ensure that the MIPI cable is properly clipped into place.
 - Check whether the pins of the 5680 chip are clean.
 - Use the colorbar firmware to test to make sure the RF part works properly.
 
-##### 5). The blue LED flash as 2Hz
+##### 4). The blue LED flashes 2 short (1/4s) pulses every four seconds
 
-Your VTX may be in 0mw mode. You can exit using the following methods.
+At the end of VTX initialization, if the camera is not detected, the blue LED will flash the pattern described. 
+(The foxeer digisight v3 camera may not show as detected but this does not affect the VTX output RF.)
 
-- Quad + VTX power on
-- Connect Quad to betaflight configurator
-- Enter vtx page, set power from 0mw to others
+Check the following:
 
-##### 6). The blue LED flash as 4Hz
+- Replace other camera or MIPI cable.
+- Check whether the pins of the MIPI socket are clean and intact and ensure that the MIPI cable is properly clipped into place.
+- Check whether the pins of the 5680 chip are clean.
 
-For HDZ Freestyle V1/V2, if the VTX overheats, the RF will be automatically shut down until the Quad is armed or repower.
+##### 5). The blue LED flashes 3 short (1/4s) pulses every four seconds
 
-##### 7). The blue LED flashes 2 times per second
+The VTX does not normally overheat when moving through air.
+If using the VTX on a bench always use a fan too aid cool, otherwise try switching to a lower power mode.
+
+Note : For HDZ Freestyle V1/V2, if the VTX overheats, the RF will be automatically shut down until the Quad is armed or repowered.
+
+##### 6). TThe blue LED flashes 4 short (1/4s) pulses every four seconds
 
 Your VTX's RF chip dm6300 is damaged, at least it no longer responds to dm5680.
+
+##### 7). The blue LED flashes 1 long (1s) and 1 short (1/4s) pulses every four seconds
+
+Your VTX may be in 0mw mode. You can exit using the following method:
+
+- Quad + VTX power on
+- Connect Quad to Betaflight configurator
+- Enter VTX page, set power from 0mw to others
+
+##### 8). The blue LED flashes 1 long (1s) and 2 short (1/4s) pulses every four seconds
+
+Your VTX may be in Pit mode. You can exit using the following method:
+
+- Quad + VTX power on
+- Connect Quad to Betaflight configurator
+- Enter VTX page, set Pitmode to Off 
 
 ## Received video exception
 
@@ -86,7 +100,7 @@ Your VTX's RF chip dm6300 is damaged, at least it no longer responds to dm5680.
 
 #### 4. Cross testing
 
-Replace the VTX, camera, and mipi cables respectively to identify where the problem lies.
+Replace the VTX, camera, and  cables respectively to identify where the problem lies.
 
 #### 5. Check power supply
 
