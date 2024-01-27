@@ -39,7 +39,7 @@ Check the following:
 - Check whether the pins of the 5680 chip are clean.
 - Use the colorbar firmware to test to make sure the RF part works properly.
 
-##### 4). The blue LED flashes 2 short (1/4s) pulses every four seconds
+##### 4). The blue LED flashes 2 short (1/4s) pulses every four seconds (Camera not detected)
 
 At the end of VTX initialization, if the camera is not detected, the blue LED will flash the pattern described. 
 (The foxeer digisight v3 camera may not show as detected but this does not affect the VTX output RF.)
@@ -50,18 +50,18 @@ Check the following:
 - Check whether the pins of the MIPI socket are clean and intact and ensure that the MIPI cable is properly clipped into place.
 - Check whether the pins of the 5680 chip are clean.
 
-##### 5). The blue LED flashes 3 short (1/4s) pulses every four seconds
+##### 5). The blue LED flashes 3 short (1/4s) pulses every four seconds (Overheat protection)
 
 The VTX does not normally overheat when moving through air.
-If using the VTX on a bench always use a fan too aid cool, otherwise try switching to a lower power mode.
+If using the VTX on a bench always use a fan too aid cooling, otherwise try switching to a lower power mode.
 
 Note : For HDZ Freestyle V1/V2, if the VTX overheats, the RF will be automatically shut down until the Quad is armed or repowered.
 
-##### 6). TThe blue LED flashes 4 short (1/4s) pulses every four seconds
+##### 6). The blue LED flashes 4 short (1/4s) pulses every four seconds (RF chip failure)
 
 Your VTX's RF chip dm6300 is damaged, at least it no longer responds to dm5680.
 
-##### 7). The blue LED flashes 1 long (1s) and 1 short (1/4s) pulses every four seconds
+##### 7). The blue LED flashes 1 long (1s) and 1 short (1/4s) pulses every four seconds (0mW mode)
 
 Your VTX may be in 0mw mode. You can exit using the following method:
 
@@ -69,7 +69,7 @@ Your VTX may be in 0mw mode. You can exit using the following method:
 - Connect Quad to Betaflight configurator
 - Enter VTX page, set power from 0mw to others
 
-##### 8). The blue LED flashes 1 long (1s) and 2 short (1/4s) pulses every four seconds
+##### 8). The blue LED flashes 1 long (1s) and 2 short (1/4s) pulses every four seconds (Pit mode)
 
 Your VTX may be in Pit mode. You can exit using the following method:
 
