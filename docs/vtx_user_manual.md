@@ -21,16 +21,31 @@ Working status indicator light.
 - Flicker 3x after boot indicates MSP signaling is detected.
 - Specific modes are represented with patterns of long (1s) and short (1/4s) pulses, within a 4s timeframe
 
+#### Camera Lost
 
-<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/led-gif-test/site/img/led_flash_2short_and_pause.gif" style="width:100">
+`- _ - _ _ _ _ _ _ _ _ _ _ _ _ _`
 
-<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/led-gif-test/site/img/led_flash_3short_and_pause.gif" style="width:100">
+<img src="https://raw.githubusercontent.com/ligenxxxx/hdzero-vtx-docs/led-gif-test/site/img/led_flash_2short_and_pause.gif" style="width:100">
 
-<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/led-gif-test/site/img/led_flash_4short_and_pause.gif" style="width:100">
+#### Heat Protect
 
-<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/led-gif-test/site/img/led_flash_1long_and_1short_and_pause.gif" style="width:100">
+`- _ - _ - _ _ _ _ _ _ _ _ _ _ _`
 
-<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/led-gif-test/site/img/led_flash_1long_and_2short_and_pause.gif" style="width:100">
+<img src="https://raw.githubusercontent.com/ligenxxxx/hdzero-vtx-docs/led-gif-test/site/img/led_flash_3short_and_pause.gif" style="width:100">
+
+#### DM6300 Lost
+
+`- _ - _ - _ - _ _ _ _ _ _ _ _ _`
+
+<img src="https://raw.githubusercontent.com/ligenxxxx/hdzero-vtx-docs/led-gif-test/site/img/led_flash_4short_and_pause.gif" style="width:100">
+
+#### 0mW Mode
+
+<img src="https://raw.githubusercontent.com/ligenxxxx/hdzero-vtx-docs/led-gif-test/site/img/led_flash_1long_and_1short_and_pause.gif" style="width:100">
+
+`- - - - - - - -_ - _ _ _ _ _ _ `
+
+<img src="https://raw.githubusercontent.com/ligenxxxx/hdzero-vtx-docs/led-gif-test/site/img/led_flash_1long_and_2short_and_pause.gif" style="width:100">
 
 <img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/LED_Patterns.png" style="width:100">
 
