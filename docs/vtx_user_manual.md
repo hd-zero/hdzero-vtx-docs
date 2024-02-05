@@ -23,31 +23,33 @@ Working status indicator light.
 
 #### Camera Lost
 
-`- _ - _ _ _ _ _ _ _ _ _ _ _ _ _`
+Double short blink
 
 <img src="https://raw.githubusercontent.com/ligenxxxx/hdzero-vtx-docs/led-gif-test/site/img/led_flash_2short_and_pause.gif" style="width:100">
 
 #### Heat Protect
 
-`- _ - _ - _ _ _ _ _ _ _ _ _ _ _`
+Triple short blink
 
 <img src="https://raw.githubusercontent.com/ligenxxxx/hdzero-vtx-docs/led-gif-test/site/img/led_flash_3short_and_pause.gif" style="width:100">
 
 #### DM6300 Lost
 
-`- _ - _ - _ - _ _ _ _ _ _ _ _ _`
+Quadra short blink
 
 <img src="https://raw.githubusercontent.com/ligenxxxx/hdzero-vtx-docs/led-gif-test/site/img/led_flash_4short_and_pause.gif" style="width:100">
 
 #### 0mW Mode
 
+A long blink and a short blink
+
 <img src="https://raw.githubusercontent.com/ligenxxxx/hdzero-vtx-docs/led-gif-test/site/img/led_flash_1long_and_1short_and_pause.gif" style="width:100">
 
-`- - - - - - - -_ - _ _ _ _ _ _ `
+#### Pit Mode
+
+A long blink and double short blink
 
 <img src="https://raw.githubusercontent.com/ligenxxxx/hdzero-vtx-docs/led-gif-test/site/img/led_flash_1long_and_2short_and_pause.gif" style="width:100">
-
-<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/LED_Patterns.png" style="width:100">
 
 Note the first three in the list, are error cases and are checked ahead of any others, and will be displayed if in force.
 This means for example, that if the vtx is in heat protection mode, setting the board to 0mW will not be apparent.
