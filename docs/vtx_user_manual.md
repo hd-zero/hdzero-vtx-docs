@@ -19,7 +19,6 @@ The VTX lights up when powered on and goes off when powered off. It will not fla
 Working status indicator light.
 
 - Flicker 3x after boot indicates MSP signaling is detected.
-
 - Specific modes are represented with patterns of long (1s) and short (1/4s) pulses, within a 4s timeframe
 
 <img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/LED_Patterns.png" style="width:100">
@@ -170,3 +169,11 @@ Here are the steps:
 2. Unzip and flash as firmware update to your VTX.
 3. Power on VTX, BLUE LED flashes 5 times and then goes out, unlock completed.
 4. Flash the latest release firmware to your VTX. When you switch channels in the VTX menu you will see additional channels from L1 to L8.
+
+## Reset setting
+
+Reset VTX settings to factory settings.
+
+- Short the TX and RX of VTX and disconnect from FC uart.
+- Power up the VTX.
+- Wait 5~10 seconds, then power off. The reset setting is completed.
