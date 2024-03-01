@@ -19,7 +19,6 @@ The VTX lights up when powered on and goes off when powered off. It will not fla
 Working status indicator light.
 
 - Flicker 3x after boot indicates MSP signaling is detected.
-
 - Specific modes are represented with patterns of long (1s) and short (1/4s) pulses, within a 4s timeframe
 
 <img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/LED_Patterns.png" style="width:100">
@@ -39,6 +38,15 @@ Note not all VTXes support keypad.
 - Do not use soft serial uart.
 - VTX TX <=> FC RX
 - VTX RX <=> FC TX
+
+### Baud rate
+
+VTX supports two baud rates: 115200 and 230400. The factory default is 115200.
+How to switch baud rate:
+
+- Adjust FC's uart to the baud rate you need.
+- Power up the Quad. VRX/Goggle will not display the OSD.
+- Wait fifteen seconds and then restart the Quad. VTX will update the baud rate and VRX/Goggle will display the OSD.
 
 ## OSD setup
 
