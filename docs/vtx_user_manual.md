@@ -43,6 +43,8 @@ Note not all VTXes support keypad.
 
 VTX supports two baud rates: 115200 and 230400. 
 
+***Note: HDZero Race V3 VTX only support 115200 baud rate.***
+
 During the initialization phase, VTX will detect whether the serial port can correctly receive osd data. If the correct osd data packet is not received for more than 2 seconds, VTX will automatically switch the baud rate.
 
 ## OSD setup
