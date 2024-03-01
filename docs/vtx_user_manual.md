@@ -41,12 +41,9 @@ Note not all VTXes support keypad.
 
 ### Baud rate
 
-VTX supports two baud rates: 115200 and 230400. The factory default is 115200.
-How to switch baud rate:
+VTX supports two baud rates: 115200 and 230400. 
 
-- Adjust FC's uart to the baud rate you need.
-- Power up the Quad. VRX/Goggle will not display the OSD.
-- Wait fifteen seconds and then restart the Quad. VTX will update the baud rate and VRX/Goggle will display the OSD.
+During the initialization phase, VTX will detect whether the serial port can correctly receive osd data. If the correct osd data packet is not received for more than 2 seconds, VTX will automatically switch the baud rate.
 
 ## OSD setup
 
