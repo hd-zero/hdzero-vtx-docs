@@ -68,6 +68,10 @@
     <li class="toctree-l2"><a class="reference internal" href="#keypad">Keypad</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#uart">UART</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#baud-rate">Baud rate</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#osd-setup">OSD setup</a>
         <ul>
@@ -110,6 +114,8 @@
     <li class="toctree-l2"><a class="reference internal" href="#unlock-rf-power-limit">Unlock RF POWER Limit</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#unlock-low-band">Unlock Low band</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#reset-setting">Reset setting</a>
     </li>
     </ul>
                 </li>
@@ -157,14 +163,12 @@
 <h3 id="blue-led">BLUE LED</h3>
 <p>Working status indicator light.</p>
 <ul>
-<li>flicker 3x after boot indicates MSP signaling is detected.</li>
-<li>OFF = camera lost (check camera and cabling)</li>
-<li>ON/OFF @ 1hz = heat protection</li>
-<li>ON/OFF @ 4hz = 0MW pitt mode active</li>
-<li>ON/OFF @ 2hz = 0.1mw pitt mode active</li>
-<li>2 times per second with a pause between each set of 2 flashes = RF chip(dm6300) failure</li>
-<li>ON solid = VTX operation normal</li>
+<li>Flicker 3x after boot indicates MSP signaling is detected.</li>
+<li>Specific modes are represented with patterns of long (1s) and short (1/4s) pulses, within a 4s timeframe</li>
 </ul>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/LED_Patterns.png" style="width:100"></p>
+<p>Note the first three in the list, are error cases and are checked ahead of any others, and will be displayed if in force.
+This means for example, that if the vtx is in heat protection mode, setting the board to 0mW will not be apparent.</p>
 <h2 id="keypad">Keypad</h2>
 <p>Note not all VTXes support keypad.</p>
 <p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/Keypad_Usage.png" style="width:100"></p>
@@ -175,6 +179,10 @@
 <li>VTX TX &lt;=&gt; FC RX</li>
 <li>VTX RX &lt;=&gt; FC TX</li>
 </ul>
+<h3 id="baud-rate">Baud rate</h3>
+<p>VTX supports two baud rates: 115200 and 230400. </p>
+<p><strong><em>Note: HDZero Race V3 VTX only support 115200 baud rate.</em></strong></p>
+<p>During the initialization phase, VTX will detect whether the serial port can correctly receive osd data. If the correct osd data packet is not received for more than 2 seconds, VTX will automatically switch the baud rate.</p>
 <h2 id="osd-setup">OSD setup</h2>
 <h3 id="prerequisition">Prerequisition</h3>
 <ul>
@@ -283,6 +291,13 @@
 <li>Power on VTX, BLUE LED flashes 5 times and then goes out, unlock completed.</li>
 <li>Flash the latest release firmware to your VTX. When you switch channels in the VTX menu you will see additional channels from L1 to L8.</li>
 </ol>
+<h2 id="reset-setting">Reset setting</h2>
+<p>Reset VTX settings to factory settings.</p>
+<ul>
+<li>Short the TX and RX of VTX and disconnect from FC uart.</li>
+<li>Power up the VTX.</li>
+<li>Wait 5~10 seconds, then power off. The reset setting is completed.</li>
+</ul>
               
             </div>
           </div><footer>
