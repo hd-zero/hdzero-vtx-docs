@@ -341,23 +341,24 @@ The HDZero Freestyle V2 VTX is our 2nd generation 5.8GHz digital video transmitt
 |  **HDZero Freestyle v2** |   B               |  C            | E                 |             | G                | 
 |  **Foxeer VTX**          | A                 |  C            |                   |             | G                | 
 |  **HDZero Eco VTX**      |   B               |  C            |                   |             |                  | 
-                           
-**f/w Update Socket**
-A: 7-way SH 1.0mm
-B: 7-way SUR 0.8mm
-
-**Keypad Socket**
-C: 6-way SUR 0.8mm  
-
-**Power/UART Socket**
-D: 6-way GH 1.25mm
-E: 5-way GH 1.25mm
-
-**HD VTX Plug**
-F: 6-way GH 1.25mm
-
-**Camera Connector**
-G:  20 Pin 0.4mm Pitch (MIPI)
-
-**Miscellaneous Notes**
-Keypad PCB Socket: 6-way GH 1.25mm)
+                   
+| **f/w Update Socket**                 | 
+| :-----------------------------------  |
+| A: 7-way SH 1.0mm                     |
+| B: 7-way SUR 0.8mm                    |
+|                                       |
+| **Keypad Socket**                     |
+| C: 6-way SUR 0.8mm                    |
+|                                       |
+| **Power/UART Socket**                 |
+| D: 6-way GH 1.25mm                    |
+| E: 5-way GH 1.25mm                    |
+|                                       |
+| **HD VTX Plug**                       |
+| F: 6-way GH 1.25mm                    |
+|                                       |
+| **Camera Connector**                  |
+| G:  20 Pin 0.4mm Pitch (MIPI)         |
+|                                       |
+| **Miscellaneous Notes**               |
+|Keypad PCB Socket: 6-way GH 1.25mm)    |
