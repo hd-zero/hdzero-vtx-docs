@@ -2,19 +2,19 @@
 
 ## Summary
 
-|           VTX Name           |    Whoop(EOL)    |        Whoop Lite        |    Race V1(EOL)    |    Race V2(EOL)    |       Race V3       |              Freestyle V1 (EOL)              |                  Freestyle V2                  |
-| :--------------------------: | :---------------: | :----------------------: | :-----------------: | :-----------------: | :-----------------: | :--------------------------------------------: | :--------------------------------------------: |
-| **Dimension(mm x mm)** |       32x32       |          32x32          |        27x45        |        34x34        |        28x32        |                     40x40                     |                     29x30                     |
-|  **Mounting Pattern**  | 25.5x25.5<br />M2 | 25.5x25.5<br />M2 (Soft) | 20x20<br />M4(Soft) | 20x20<br />M4(Soft) | 20x20<br />M4(Soft) |              30x30<br />M3(Soft)              |                 20x20<br />M2                 |
-|   **Weight(grams)**   |        5.3        |           4.5           |          7          |          6          |         5.5         |                       28                       |                      22.3                      |
-|    **Power Input**    |      7V-17V      |          1S-3S          |       7V-17V       |       7V-17V       |       4V-12V       |           2S-6S (2rd batch or later)           |                     7-25V                     |
-| **Power Consumption** |       5~6W       |           5~6W           |        5~6W        |        5~6W        |        5~6W        |                     6~15W                     |                     6~15W                     |
-|  **RF Power Output**  |    25mW,200mW    |        25mW,200mW        |     25mW,200mW     |     25mW,200mW     |     25mW,200mW     | 25mW,200mW (500mW,<br />1W if with HAM license | 25mW,200mW (500mW,<br />1W if with HAM license |
-|    **Secured U.FL**    |        No        |           Yes           |         Yes         |         Yes         |         Yes         |                      Yes                      |                      Yes                      |
-|  **Antenna Included**  |   Not included   |       Not included       |    Not included    |    Not included    |    Not included    |                Polarized(RHCP)                |                Polarized(RHCP)                |
-|  **Tramp/SmartAudio**  |        No        |        SmartAudio        |     SmartAudio     |     SmartAudio     |        Tramp        |                   SmartAudio                   |                   SmartAudio                   |
-|       **Keypad**       |        Yes        |            No            |         Yes         |         Yes         |         No         |                      Yes                      |                      Yes                      |
-|    **Application**    |       Whoop       |        TinyWhoop        |        Race        |        Race        |        Race        |                   Freestyle                   |                   Freestyle                   |
+|           VTX Name           |    Whoop(EOL)    |        Whoop Lite        |    Race V1(EOL)    |    Race V2(EOL)    |       Race V3       |              Freestyle V1 (EOL)              |                  Freestyle V2                       |   Eco VTX    |
+| :--------------------------: | :---------------: | :----------------------: | :-----------------: | :-----------------: | :-----------------: | :--------------------------------------------: | :--------------------------------------------: | :----------: |
+| **Dimension(mm x mm)** |       32x32       |          32x32          |        27x45        |        34x34        |        28x32        |                     40x40                     |                     29x30                              | 32x32             |
+|  **Mounting Pattern**  | 25.5x25.5<br />M2 | 25.5x25.5<br />M2 (Soft) | 20x20<br />M4(Soft) | 20x20<br />M4(Soft) | 20x20<br />M4(Soft) |              30x30<br />M3(Soft)              |                 20x20<br />M2                         | 25.5x25.5<br/>M2 (Soft) |
+|   **Weight(grams)**   |        5.3        |           4.5           |          7          |          6          |         5.5         |                       28                       |                      22.3                              | 4.5 |
+|    **Power Input**    |      7V-17V      |          1S-3S          |       7V-17V       |       7V-17V       |       4V-12V       |           2S-6S (2rd batch or later)           |                     7-25V                                  | 4V-12V |
+| **Power Consumption** |       5~6W       |           5~6W           |        5~6W        |        5~6W        |        5~6W        |                     6~15W                     |                     6~15W                                  | 5~6W |
+|  **RF Power Output**  |    25mW,200mW    |        25mW,200mW        |     25mW,200mW     |     25mW,200mW     |     25mW,200mW     | 25mW,200mW (500mW,<br />1W if with HAM license | 25mW,200mW (500mW,<br />1W if with HAM license            | 25mW,200mW |
+|    **Secured U.FL**    |        No        |           Yes           |         Yes         |         Yes         |         Yes         |                      Yes                      |                      Yes                                | Yes |
+|  **Antenna Included**  |   Not included   |       Not included       |    Not included    |    Not included    |    Not included    |                Polarized(RHCP)                |                Polarized(RHCP)                            | Dipole |
+|  **Tramp/SmartAudio**  |        No        |        SmartAudio        |     SmartAudio     |     SmartAudio     |        Tramp        |                   SmartAudio                   |                   SmartAudio                            | No |
+|       **Keypad**       |        Yes        |            No            |         Yes         |         Yes         |         No         |                      Yes                      |                      Yes                               | Yes |
+|    **Application**    |       Whoop       |        TinyWhoop        |        Race        |        Race        |        Race        |                   Freestyle                   |                   Freestyle                                | TinyWhoop |
 
 ## **General Consideration for VTX installation**
 
@@ -361,4 +361,4 @@ The HDZero Freestyle V2 VTX is our 2nd generation 5.8GHz digital video transmitt
 | G:  20 Pin 0.4mm Pitch (MIPI)         |
 |                                       |
 | **Miscellaneous Notes**               |
-|Keypad PCB Socket: 6-way GH 1.25mm)    |
+|Keypad PCB Socket: 6-way GH 1.25mm     |
