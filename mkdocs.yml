@@ -14,9 +14,6 @@ plugins:
       min_search_length: 3
       indexing: 'full'
 
-extra:
-  version: v2.0
-
 repo_url: https://github.com/hd-zero/hdzero-vtx-docs
 repo_name: 'Github'
 edit_uri: 'blob/main/docs/'
