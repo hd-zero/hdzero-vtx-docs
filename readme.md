@@ -15,7 +15,7 @@ pip installer mkdocs mike
 ### Set default
 
 ```
-mike deploy --push --update-aliases main latest
+mike deploy --push --update-aliases dev latest
 ```
 
 ```
