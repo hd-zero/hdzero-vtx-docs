@@ -21,7 +21,7 @@ Working status indicator light.
 - Flicker 3x after boot indicates MSP signaling is detected.
 - Specific modes are represented with patterns of long (1s) and short (1/4s) pulses, within a 4s timeframe
 
-<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/LED_Patterns.png" style="width:100">
+<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/LED_Patterns.png" style="width:100">
 
 Note the first three in the list, are error cases and are checked ahead of any others, and will be displayed if in force.
 This means for example, that if the vtx is in heat protection mode, setting the board to 0mW will not be apparent.
@@ -30,7 +30,7 @@ This means for example, that if the vtx is in heat protection mode, setting the 
 
 Note not all VTXes support keypad.
 
-<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/Keypad_Usage.png" style="width:100">
+<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/Keypad_Usage.png" style="width:100">
 
 ## UART
 
@@ -41,7 +41,7 @@ Note not all VTXes support keypad.
 
 ### Baud rate
 
-VTX supports two baud rates: 115200 and 230400. 
+VTX supports two baud rates: 115200 and 230400.
 
 ***Note: HDZero Race V3 VTX only support 115200 baud rate.***
 
@@ -77,7 +77,7 @@ See **UART** abve.
 
 As an example: UART3 on picture below is used for VTX (MSP + Displayport).
 
-<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/Betaflight_port_config.png" style="width:100">
+<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/Betaflight_port_config.png" style="width:100">
 
 ## VTX Table
 
@@ -87,13 +87,13 @@ You really don't need to care about it because VTX will automatically configure 
 
 Before using stick command, make sure that fc uart is set correctly.
 
-<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/stick_command.png" style="width:100">
+<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/stick_command.png" style="width:100">
 
 ## VTX Menu
 
 All HDZero VTXes have the following settings for its RF power level management. These settings can be changed using the VTX menu.
 
-<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/vtx_menu.png" style="width:100">
+<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/vtx_menu.png" style="width:100">
 
 ### CHANNEL
 
