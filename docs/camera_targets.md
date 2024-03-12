@@ -1,5 +1,3 @@
 # Camera Targets
 
 TODO
-
-test
