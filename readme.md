@@ -33,3 +33,9 @@ mike deploy x.y.z --push
 ```
 mike deploy x.y.z --push
 ```
+
+### Browse locally
+
+```
+mike serve
+```
