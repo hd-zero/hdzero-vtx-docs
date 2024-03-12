@@ -3,3 +3,27 @@
 ## Viewing Documentation
 
 Open up [https://hd-zero.github.io/hdzero-vtx-docs/latest](https://hd-zero.github.io/hdzero-vtx-docs/latest) in your browser.
+
+## For Dev
+
+### Install mkdocs and mike
+
+```
+pip installer mkdocs mike
+```
+
+### Set default
+
+```
+mike deploy --push --update-aliases main latest
+```
+
+```
+mike set-default --push latest
+```
+
+### Release a version
+
+```
+mike deploy x.y.z
+```
