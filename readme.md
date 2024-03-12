@@ -22,8 +22,14 @@ mike deploy --push --update-aliases dev latest
 mike set-default --push latest
 ```
 
-### Release a version
+### Release/update a version and deploy
 
 ```
-mike deploy x.y.z
+mike deploy x.y.z --push
+```
+
+### Delete a version and deploy
+
+```
+mike deploy x.y.z --push
 ```
