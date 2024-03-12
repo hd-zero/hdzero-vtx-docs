@@ -25,5 +25,5 @@ mike set-default --push latest
 ### Release a version
 
 ```
-mike deploy x.y.z
+mike deploy Vx.y.z
 ```
