@@ -32,10 +32,7 @@
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
           <a href=".." class="icon icon-home"> HDZero VTX Docs
-        </a>
-        <div class="version">
-          v2.0
-        </div><div role="search">
+        </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
   </form>
@@ -50,7 +47,7 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="./">VTX Target</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#summy">Summy</a>
+    <li class="toctree-l2"><a class="reference internal" href="#summary">Summary</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#general-consideration-for-vtx-installation">General Consideration for VTX installation</a>
         <ul>
@@ -79,6 +76,8 @@
     <li class="toctree-l3"><a class="reference internal" href="#hdzero-freestyle-v2-video-transmitter">HDZero Freestyle V2 Video Transmitter</a>
     </li>
         </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#vtx-sockets">VTX Sockets</a>
     </li>
     </ul>
                 </li>
@@ -124,7 +123,7 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="vtx-targets">VTX Targets</h1>
-<h2 id="summy">Summy</h2>
+<h2 id="summary">Summary</h2>
 <table>
 <thead>
 <tr>
@@ -136,6 +135,7 @@
 <th style="text-align: center;">Race V3</th>
 <th style="text-align: center;">Freestyle V1 (EOL)</th>
 <th style="text-align: center;">Freestyle V2</th>
+<th style="text-align: center;">Eco VTX</th>
 </tr>
 </thead>
 <tbody>
@@ -148,6 +148,7 @@
 <td style="text-align: center;">28x32</td>
 <td style="text-align: center;">40x40</td>
 <td style="text-align: center;">29x30</td>
+<td style="text-align: center;">32x32</td>
 </tr>
 <tr>
 <td style="text-align: center;"><strong>Mounting Pattern</strong></td>
@@ -158,6 +159,7 @@
 <td style="text-align: center;">20x20<br />M4(Soft)</td>
 <td style="text-align: center;">30x30<br />M3(Soft)</td>
 <td style="text-align: center;">20x20<br />M2</td>
+<td style="text-align: center;">25.5x25.5``M2 (Soft)</td>
 </tr>
 <tr>
 <td style="text-align: center;"><strong>Weight(grams)</strong></td>
@@ -168,6 +170,7 @@
 <td style="text-align: center;">5.5</td>
 <td style="text-align: center;">28</td>
 <td style="text-align: center;">22.3</td>
+<td style="text-align: center;">4.5</td>
 </tr>
 <tr>
 <td style="text-align: center;"><strong>Power Input</strong></td>
@@ -178,6 +181,7 @@
 <td style="text-align: center;">4V-12V</td>
 <td style="text-align: center;">2S-6S (2rd batch or later)</td>
 <td style="text-align: center;">7-25V</td>
+<td style="text-align: center;">4V-12V</td>
 </tr>
 <tr>
 <td style="text-align: center;"><strong>Power Consumption</strong></td>
@@ -188,6 +192,7 @@
 <td style="text-align: center;">5~6W</td>
 <td style="text-align: center;">6~15W</td>
 <td style="text-align: center;">6~15W</td>
+<td style="text-align: center;">5~6W</td>
 </tr>
 <tr>
 <td style="text-align: center;"><strong>RF Power Output</strong></td>
@@ -198,10 +203,12 @@
 <td style="text-align: center;">25mW,200mW</td>
 <td style="text-align: center;">25mW,200mW (500mW,<br />1W if with HAM license</td>
 <td style="text-align: center;">25mW,200mW (500mW,<br />1W if with HAM license</td>
+<td style="text-align: center;">25mW,200mW</td>
 </tr>
 <tr>
 <td style="text-align: center;"><strong>Secured U.FL</strong></td>
 <td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
 <td style="text-align: center;">Yes</td>
 <td style="text-align: center;">Yes</td>
 <td style="text-align: center;">Yes</td>
@@ -218,6 +225,7 @@
 <td style="text-align: center;">Not included</td>
 <td style="text-align: center;">Polarized(RHCP)</td>
 <td style="text-align: center;">Polarized(RHCP)</td>
+<td style="text-align: center;">Dipole</td>
 </tr>
 <tr>
 <td style="text-align: center;"><strong>Tramp/SmartAudio</strong></td>
@@ -228,6 +236,7 @@
 <td style="text-align: center;">Tramp</td>
 <td style="text-align: center;">SmartAudio</td>
 <td style="text-align: center;">SmartAudio</td>
+<td style="text-align: center;">No</td>
 </tr>
 <tr>
 <td style="text-align: center;"><strong>Keypad</strong></td>
@@ -236,6 +245,7 @@
 <td style="text-align: center;">Yes</td>
 <td style="text-align: center;">Yes</td>
 <td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
 <td style="text-align: center;">Yes</td>
 <td style="text-align: center;">Yes</td>
 </tr>
@@ -248,6 +258,7 @@
 <td style="text-align: center;">Race</td>
 <td style="text-align: center;">Freestyle</td>
 <td style="text-align: center;">Freestyle</td>
+<td style="text-align: center;">TinyWhoop</td>
 </tr>
 </tbody>
 </table>
@@ -299,7 +310,7 @@
 the small components around the holes.</strong></p>
 <p>This VTX is designed for low-speed whoop application. Compared to the other HDZero VTXes, it is more vulnerable to be damaged by crash due to: (1) the UFL connector is easily peeled off due to no antenna retention, and (2) it is not easy for soft mounting. Though the VTX can be mounted on a racing and other high-speed quad, it is highly recommended to consider HDZero Race (V1 or V2) for such application.</p>
 <p>This VTX does not support SmartAudio or Tramp.</p>
-<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_Whoop_intro.png" style="width:100"></p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_Whoop_intro.png" style="width:100"></p>
 <p><strong>Notes:</strong></p>
 <ul>
 <li>Read first: <strong>General Consideration for VTX installation</strong></li>
@@ -317,7 +328,7 @@ the small components around the holes.</strong></p>
 </ul>
 <p>This VTX has protection cases mounted on both sides. These metal cases are grounded, and to provide protection from crash. They can be removed for tiny whoop quad which cares about every added gram.</p>
 <p>This VTX includes M3/M2 gummies for soft mounting, and zip ties for antenna retention. Though the VTX can be mounted on a racing and other high-speed quad, it is highly recommended to consider HDZero Race (V1 or V2) for such application.</p>
-<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_WhoopLite_intro.png" style="width:100"></p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_WhoopLite_intro.png" style="width:100"></p>
 <table>
 <thead>
 <tr>
@@ -391,7 +402,7 @@ the small components around the holes.</strong></p>
 <h3 id="hdzero-race-v1-video-transmitter-eol">HDZero Race V1 Video Transmitter (EOL)</h3>
 <p>The HDZero Race VTX is a digital HD 720p 60fps video transmitter capable of delivering up to 200mw on 5.8GHz.</p>
 <p>The power input range is 7V – 17V (2S – 4S).</p>
-<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_RaceV1_intro_1.png" style="width:100"></p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_RaceV1_intro_1.png" style="width:100"></p>
 <table>
 <thead>
 <tr>
@@ -450,7 +461,7 @@ the small components around the holes.</strong></p>
 </tr>
 </tbody>
 </table>
-<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_RaceV1_intro_2.png" style="width:100"></p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_RaceV1_intro_2.png" style="width:100"></p>
 <table>
 <thead>
 <tr>
@@ -501,7 +512,7 @@ the small components around the holes.</strong></p>
 </ul>
 <p><strong>Warning: Check that pinout matches the FC pinout before installing to be safe if plugging directly.</strong></p>
 <h4 id="mounting-an-ufl-antenna-or-pigtail">Mounting an u.FL antenna or pigtail</h4>
-<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_RaceV1_intro_3.png" style="width:100"></p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_RaceV1_intro_3.png" style="width:100"></p>
 <p>There are 2 methods to mount antenna on VTX:</p>
 <ul>
 <li>Use included retention screws, nuts and plate.</li>
@@ -510,7 +521,7 @@ the small components around the holes.</strong></p>
 <h3 id="hdzero-race-v2-video-transmitter-eol">HDZero Race V2 Video Transmitter (EOL)</h3>
 <p>The HDZero Race VTX is a digital HD 720p 60fps video transmitter capable of delivering up to 200mw on 5.8GHz. It works with the Shark Byte RX5.1 goggle module to transmit video, and with a remote controller to wirelessly control the parameters for the transmitter and camera.</p>
 <p>The power input range is 7V – 17V (2S – 4S).</p>
-<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_RaceV2_intro_1.png" style="width:100"></p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_RaceV2_intro_1.png" style="width:100"></p>
 <table>
 <thead>
 <tr>
@@ -587,7 +598,7 @@ the small components around the holes.</strong></p>
 <li>Use included retention screws, nuts and plate;</li>
 <li>Use included zip-ties.</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_RaceV2_intro_2.png" style="width:100"></p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_RaceV2_intro_2.png" style="width:100"></p>
 <h4 id="connecting-mipi-cable">Connecting MIPI cable</h4>
 <p>Use the included zip-tie to secure MIPI cable and protect MIPI connector.</p>
 <p><strong>Notes:</strong></p>
@@ -599,7 +610,7 @@ the small components around the holes.</strong></p>
 <p>Designed for FPV racing, the HDZero Race V3 VTX is our 3rd generation digital video transmitter. With a voltage range starting at 4V, it can be powered by the 5V 1.5A regulator of most FC's or up to 12V for FC's that include a HD VTX plug. It is small (28x32x5mm) and light (5.5 grams). With a width of only 28mm, the VTX is now a similar width to many FC's, which improves durability and reduces weight. The antenna is securely attached with a metal bar and screws. No soldering needed – just plug the wire harness into a compatible HD-ready FC.</p>
 <p>The HDZero Race V3 VTX is designed with durability in mind, rather than weight. It is made with a 1.6mm thick PCB, in comparison to the 1.0mm PCB used in the Whoop lite VTX. Moreover, it uses more large package size components for stability consideration. For the smaller components, an additional glue coating is applied to increase crash protection.</p>
 <p>The HDZero Race V3 VTX offers high-quality video in 540p90, 720p60 and 1080p30 resolutions with 25/200mW switchable power on 5.8GHz.</p>
-<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_RaceV3_intro_1.png" style="width:100"></p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_RaceV3_intro_1.png" style="width:100"></p>
 <table>
 <thead>
 <tr>
@@ -631,14 +642,14 @@ the small components around the holes.</strong></p>
 </tbody>
 </table>
 <h4 id="connection">Connection</h4>
-<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_RaceV3_intro_2.png" style="width:100"></p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_RaceV3_intro_2.png" style="width:100"></p>
 <p>The right figure shows the typical connection with FC supports MSP VTX protocol.</p>
 <p>The Race V3 supports direct connect with Ghost RX via its SA/Tramp port(TBD)</p>
 <h3 id="hdzero-freestyle-v1-video-transmittereol">HDZero Freestyle V1 Video Transmitter(EOL)</h3>
 <p>The HDZero Freestyle V1 VTX offers unprecedented range and performance for the HDZero 5.8GHz digital FPV system. With its high maximum output power and robust construction, this VTX is perfect for freestyle and long-range builds.</p>
-<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_FreestyleV1_intro_1.png" style="width:100"></p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_FreestyleV1_intro_1.png" style="width:100"></p>
 <p>With a tested maximum range of more than 18 miles, the Freestyle V1 VTX will transmit a digital FPV feed as far as you're willing to fly. Not interested in long range? You'll also see better performance in urban environments and around obstacles, with none of the color noise or multipath interference issues of analog video.</p>
-<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_FreestyleV1_intro_2.png" style="width:100"></p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_FreestyleV1_intro_2.png" style="width:100"></p>
 <table>
 <thead>
 <tr>
@@ -729,7 +740,7 @@ the small components around the holes.</strong></p>
 <p><strong>*: The 1st batch supports 4S MAX.</strong></p>
 <p>The 1st batch of Freestyle V1 VTX, supports 2S-4S, A BEC supporting 2S-6S is included.</p>
 <p>The 2nd batch and later, supports 2S-6S, and the BEC is <em>not</em> included.</p>
-<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_FreestyleV1_intro_3.png" style="width:100"></p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_FreestyleV1_intro_3.png" style="width:100"></p>
 <p><strong>Important Notes:</strong></p>
 <ul>
 <li><strong>Do not directly power this VTX with a 5S/6S battery for the 1st batch.</strong></li>
@@ -740,9 +751,9 @@ the small components around the holes.</strong></p>
 </ul>
 <h3 id="hdzero-freestyle-v2-video-transmitter">HDZero Freestyle V2 Video Transmitter</h3>
 <p>The HDZero Freestyle V2 VTX is our 2nd generation 5.8GHz digital video transmitter which can be fitted into most 3-5-inch HD drones. All sockets are well protected by the CNC case that provides durability, RF shielding and improved signal integrity. A wire harness is included for solderless connection for power and MSP UART port. The antenna and MIPI cable are secured by the included retention bar and screws.</p>
-<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_FreestyleV2_intro_1.png" style="width:100"></p>
-<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_FreestyleV2_intro_2.png" style="width:100"></p>
-<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_FreestyleV2_intro_3.png" style="width:100"></p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_FreestyleV2_intro_1.png" style="width:100"></p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_FreestyleV2_intro_2.png" style="width:100"></p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_FreestyleV2_intro_3.png" style="width:100"></p>
 <table>
 <thead>
 <tr>
@@ -814,6 +825,156 @@ the small components around the holes.</strong></p>
 <td>SA</td>
 <td>Blue</td>
 <td>FC SA(TX), Optional</td>
+</tr>
+</tbody>
+</table>
+<h2 id="vtx-sockets">VTX Sockets</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"></th>
+<th style="text-align: center;">f/w Update Socket</th>
+<th style="text-align: center;">Keypad Socket</th>
+<th style="text-align: center;">Power/UART Socket</th>
+<th style="text-align: center;">HD VTX Plug</th>
+<th style="text-align: center;">Camera Connector</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>HDZero Whoop Lite</strong></td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">G</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>HDZero Whoop</strong></td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">G</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>HDZero Race v1</strong></td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">G</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>HDZero Race v2</strong></td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">G</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>HDZero Race v3</strong></td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">G</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>HDZero Freestyle v1</strong></td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">E</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">G</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>HDZero Freestyle v2</strong></td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">E</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">G</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Foxeer VTX</strong></td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">G</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>HDZero Eco VTX</strong></td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>f/w Update Socket</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">A: 7-way SH 1.0mm</td>
+</tr>
+<tr>
+<td style="text-align: left;">B: 7-way SUR 0.8mm</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Keypad Socket</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">C: 6-way SUR 0.8mm</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Power/UART Socket</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">D: 6-way GH 1.25mm</td>
+</tr>
+<tr>
+<td style="text-align: left;">E: 5-way GH 1.25mm</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HD VTX Plug</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">F: 6-way GH 1.25mm</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Camera Connector</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">G:  20 Pin 0.4mm Pitch (MIPI)</td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Miscellaneous Notes</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">Keypad PCB Socket: 6-way GH 1.25mm</td>
 </tr>
 </tbody>
 </table>
