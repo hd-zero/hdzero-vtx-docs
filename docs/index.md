@@ -1,6 +1,6 @@
 # Welcome to HDZero VTX Docs!
 
-<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero.png" style="width:100">
+<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero.png" style="width:100">
 
 ## What is HDZero?
 
