@@ -12,26 +12,26 @@ Open up [https://hd-zero.github.io/hdzero-vtx-docs/latest](https://hd-zero.githu
 pip installer mkdocs mike
 ```
 
-### Set default
+### Release version
 
 ```
-mike deploy --push --update-aliases dev latest
+mike deploy --push --update-aliases x.y.z latest
 ```
 
 ```
 mike set-default --push latest
 ```
 
-### Release/update a version and deploy
+### Update a version
 
 ```
 mike deploy x.y.z --push
 ```
 
-### Delete a version and deploy
+### Delete a version
 
 ```
-mike deploy x.y.z --push
+mike delete x.y.z --push
 ```
 
 ### Browse locally
