@@ -15,7 +15,7 @@ plugins:
       indexing: 'full'
 
 extra:
-  version: v2.0
+  version: version
 
 repo_url: https://github.com/hd-zero/hdzero-vtx-docs
 repo_name: 'Github'
