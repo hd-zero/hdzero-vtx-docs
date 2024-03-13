@@ -171,55 +171,44 @@
 </ul>
 <h4 id="2-check-the-red-and-blue-led-status">2. Check the red and blue LED status</h4>
 <h5 id="1-the-red-led-is-off-or-unstable">1). The red LED is off or unstable</h5>
-<p>The red LED is directly driven by the system's 5V power supply. If the red LED is not lit and stable, it is usually because there is a problem with the power supply.</p>
+<p>The red light is directly driven by the system's 5V power supply. If the red light is not lit stably, it is usually because there is a problem with the power supply.</p>
 <ul>
 <li>Make sure the voltage and maximum current of the power supply are within the specifications.</li>
 <li>Check if any components are cracked.</li>
 <li>There may be a fault with your VTX's power supply system, you can use a multimeter to measure the voltage test pad to verify it if you have the hardware knowledge.</li>
 </ul>
 <h5 id="2-the-blue-led-never-lights-up">2). The blue LED never lights up</h5>
-<p>When the 5680 is initializing, in normal operation, it will first configure the blue LED to be on to indicate that the 5680 mcu has started.  If it does not, check the following:</p>
+<p>Your VTX 5680 chip starts correctly.</p>
+<p>When the 5680 is initializing, it will first configure the blue LED to be on to indicate that the 5680 mcu has started.</p>
 <ul>
 <li>If you plug in the Quad battery while the FC is connected to the PC, the VTX may fail to boot although this does not happen often.</li>
-<li>There may be a fault with your VTX's power supply system, you can use a multimeter to measure the voltage test points to verify it if you have the hardware knowledge.</li>
+<li>There may be a fault with your VTX's power supply system, you can use a multimeter to measure the voltage test power to verify it if you have the hardware knowledge.</li>
 </ul>
-<h5 id="3-the-blue-led-stays-on">3). The blue LED stays on</h5>
-<p>Check the following:</p>
+<h5 id="3-the-blue-light-turns-off-after-a-few-seconds-after-powering-on">3). The blue light turns off after a few seconds after powering on</h5>
+<p>At the end of VTX initialization, if the camera is not detected, the blue light will go out. In particular, the foxeer digisight v3 camera cannot be detected but this does not affect the VTX output RF.</p>
 <ul>
-<li>Replace other camera or MIPI cable.</li>
-<li>Check whether the pins of the MIPI socket are clean and intact and ensure that the MIPI cable is properly clipped into place.</li>
+<li>Replace other camera or mipi cable.</li>
+<li>Check whether the pins of the mipi socket are intact and ensure that the mipi cable is fastened.</li>
+<li>Check whether the pins of the 5680 chip are clean.</li>
+</ul>
+<h5 id="4-the-blue-led-stays-on">4). The blue LED stays on</h5>
+<ul>
+<li>Replace other camera or mipi cable.</li>
+<li>Check whether the pins of the mipi socket are intact and ensure that the mipi cable is fastened.</li>
 <li>Check whether the pins of the 5680 chip are clean.</li>
 <li>Use the colorbar firmware to test to make sure the RF part works properly.</li>
 </ul>
-<h5 id="4-the-blue-led-flashes-2-short-14s-pulses-every-four-seconds-camera-not-detected">4). The blue LED flashes 2 short (1/4s) pulses every four seconds (Camera not detected)</h5>
-<p>At the end of VTX initialization, if the camera is not detected, the blue LED will flash the pattern described.
-(The foxeer digisight v3 camera may not show as detected but this does not affect the VTX output RF.)</p>
-<p>Check the following:</p>
+<h5 id="5-the-blue-led-flash-as-2hz">5). The blue LED flash as 2Hz</h5>
+<p>Your VTX may be in 0mw mode. You can exit using the following methods.</p>
 <ul>
-<li>Replace other camera or MIPI cable.</li>
-<li>Check whether the pins of the MIPI socket are clean and intact and ensure that the MIPI cable is properly clipped into place.</li>
-<li>Check whether the pins of the 5680 chip are clean.</li>
+<li>Quad + VTX power on</li>
+<li>Connect Quad to betaflight configurator</li>
+<li>Enter vtx page, set power from 0mw to others</li>
 </ul>
-<h5 id="5-the-blue-led-flashes-3-short-14s-pulses-every-four-seconds-overheat-protection">5). The blue LED flashes 3 short (1/4s) pulses every four seconds (Overheat protection)</h5>
-<p>The VTX does not normally overheat when moving through air.
-If using the VTX on a bench always use a fan too aid cooling, otherwise try switching to a lower power mode.</p>
-<p>Note : For HDZ Freestyle V1/V2, if the VTX overheats, the RF will be automatically shut down until the Quad is armed or repowered.</p>
-<h5 id="6-the-blue-led-flashes-4-short-14s-pulses-every-four-seconds-rf-chip-failure">6). The blue LED flashes 4 short (1/4s) pulses every four seconds (RF chip failure)</h5>
+<h5 id="6-the-blue-led-flash-as-4hz">6). The blue LED flash as 4Hz</h5>
+<p>For HDZ Freestyle V1/V2, if the VTX overheats, the RF will be automatically shut down until the Quad is armed or repower.</p>
+<h5 id="7-the-blue-led-flashes-2-times-per-second">7). The blue LED flashes 2 times per second</h5>
 <p>Your VTX's RF chip dm6300 is damaged, at least it no longer responds to dm5680.</p>
-<h5 id="7-the-blue-led-flashes-1-long-1s-and-1-short-14s-pulses-every-four-seconds-0mw-mode">7). The blue LED flashes 1 long (1s) and 1 short (1/4s) pulses every four seconds (0mW mode)</h5>
-<p>Your VTX may be in 0mw mode. You can exit using the following method:</p>
-<ul>
-<li>Quad + VTX power on</li>
-<li>Connect Quad to Betaflight configurator</li>
-<li>Enter VTX page, set power from 0mw to others</li>
-</ul>
-<h5 id="8-the-blue-led-flashes-1-long-1s-and-2-short-14s-pulses-every-four-seconds-pit-mode">8). The blue LED flashes 1 long (1s) and 2 short (1/4s) pulses every four seconds (Pit mode)</h5>
-<p>Your VTX may be in Pit mode. You can exit using the following method:</p>
-<ul>
-<li>Quad + VTX power on</li>
-<li>Connect Quad to Betaflight configurator</li>
-<li>Enter VTX page, set Pitmode to Off</li>
-</ul>
 <h2 id="received-video-exception">Received video exception</h2>
 <h3 id="desciption">Desciption</h3>
 <ul>
@@ -239,7 +228,7 @@ If using the VTX on a bench always use a fan too aid cooling, otherwise try swit
 <li>Check whether the pins of the 5680 chip are clean.</li>
 </ul>
 <h4 id="4-cross-testing">4. Cross testing</h4>
-<p>Replace the VTX, camera, and  cables respectively to identify where the problem lies.</p>
+<p>Replace the VTX, camera, and mipi cables respectively to identify where the problem lies.</p>
 <h4 id="5-check-power-supply">5. Check power supply</h4>
 <p>An unclean power supply may cause the camera to have the wrong color.</p>
 <p>Please use a DC stabilized voltage source for testing or use a battery for direct power supply.</p>
