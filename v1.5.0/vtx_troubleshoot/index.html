@@ -34,7 +34,7 @@
           <a href=".." class="icon icon-home"> HDZero VTX Docs
         </a>
         <div class="version">
-          version
+          v2.0
         </div><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
@@ -252,11 +252,11 @@
 <ul>
 <li>For Betaflight, you need to set uart peripheral to <strong>VTX(MSP+DISPLAYPORT).</strong> The picture below shows setting UART3 to OSD.</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/Betaflight_port_config.png" style="width:100"></p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/Betaflight_port_config.png" style="width:100"></p>
 <ul>
 <li>For iNav, you need to set uart Peripheral to <strong>MSP DisplayPort</strong>. The picture below shows setting UART5 to OSD.</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/iNav_port_config.png" style="width:100"></p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/iNav_port_config.png" style="width:100"></p>
 <h5 id="2-unsupported-osd-items">2). Unsupported OSD items</h5>
 <p>There are some OSD items that require hardware support to actually be enabled, which depends on FC rather than VTX. For example, OSD items related to GPS can only be displayed when FC actually detects the GPS module.</p>
 <h2 id="osd-display-unstable">OSD display unstable</h2>
@@ -305,19 +305,19 @@
 <li>Check the front and back of the VTX to see if any components are cracked or falling off.</li>
 <li>Check whether the PA is damaged.</li>
 <li>For Freestyle V1 VTX, when the power is off, measure whether the two test points named 5V0 on the front are short-circuited to ground. If short-circuited, it means the PA is damaged.
-    <img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_FreestyleV1_PD.png" /></li>
-<li>For Freestyle V2 VTX, If after powering on, the red light in the position shown below lights up, it indicates that the PA has been damaged.<img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_FreestyleV1_PD.png" /></li>
+    <img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_FreestyleV1_PD.png" /></li>
+<li>For Freestyle V2 VTX, If after powering on, the red light in the position shown below lights up, it indicates that the PA has been damaged.<img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_FreestyleV1_PD.png" /></li>
 <li>For other VTXes. Measure the voltage from test point PD to GND in the power-on state. Generally, when PD is less than 0.2V, the PA is considered to be working abnormally.<ul>
 <li>HDZero Whoop VTX
-  <img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_Whoop_PD.png" /></li>
+  <img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_Whoop_PD.png" /></li>
 <li>HDZero WhoopLite VTX
-  <img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_WhoopLite_PD.png" /></li>
+  <img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_WhoopLite_PD.png" /></li>
 <li>HDZero Race V1 VTX
-  <img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_RaceV1_PD.png" /></li>
+  <img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_RaceV1_PD.png" /></li>
 <li>HDZero Race V2 VTX
-  <img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_RaceV2_PD.png" /></li>
+  <img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_RaceV2_PD.png" /></li>
 <li>HDAZero Race V3 VTX
-  <img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/HDZero_RaceV3_PD.png" /></li>
+  <img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_RaceV3_PD.png" /></li>
 </ul>
 </li>
 </ul>
@@ -333,9 +333,9 @@
 <h4 id="2-make-sure-the-pin-pin-of-the-upgrade-socket-is-intact">2. Make sure the PIN pin of the upgrade socket is intact.</h4>
 <ul>
 <li>Bad socket
-  <img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/bad_upgrade_socket.jpg" /></li>
+  <img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/bad_upgrade_socket.jpg" /></li>
 <li>good socket
-  <img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/site/img/good_upgrade_socket.jpg" /></li>
+  <img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/good_upgrade_socket.jpg" /></li>
 </ul>
 <h4 id="3-updated-hdzero-programmer-to-support-foxeer-vtx">3. Updated HDZero Programmer to support Foxeer VTX.</h4>
 <h4 id="4-goggle-does-not-currently-support-updating-foxeer-vtx">4. Goggle does not currently support updating Foxeer VTX.</h4>
