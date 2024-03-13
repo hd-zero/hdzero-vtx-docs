@@ -2,19 +2,19 @@
 
 ## Summary
 
-|           VTX Name           |    Whoop(EOL)    |        Whoop Lite        |    Race V1(EOL)    |    Race V2(EOL)    |       Race V3       |              Freestyle V1 (EOL)              |                  Freestyle V2                  |           Eco VTX           |
-| :--------------------------: | :---------------: | :----------------------: | :-----------------: | :-----------------: | :-----------------: | :--------------------------------------------: | :--------------------------------------------: | :-------------------------: |
-| **Dimension(mm x mm)** |       32x32       |          32x32          |        27x45        |        34x34        |        28x32        |                     40x40                     |                     29x30                     |            32x32            |
-|  **Mounting Pattern**  | 25.5x25.5<br />M2 | 25.5x25.5<br />M2 (Soft) | 20x20<br />M4(Soft) | 20x20<br />M4(Soft) | 20x20<br />M4(Soft) |              30x30<br />M3(Soft)              |                 20x20<br />M2                 | 25.5x25.5``M2 (Soft) |
-|   **Weight(grams)**   |        5.3        |           4.5           |          7          |          6          |         5.5         |                       28                       |                      22.3                      |             4.5             |
-|    **Power Input**    |      7V-17V      |          1S-3S          |       7V-17V       |       7V-17V       |       4V-12V       |           2S-6S (2rd batch or later)           |                     7-25V                     |           4V-12V           |
-| **Power Consumption** |       5~6W       |           5~6W           |        5~6W        |        5~6W        |        5~6W        |                     6~15W                     |                     6~15W                     |            5~6W            |
-|  **RF Power Output**  |    25mW,200mW    |        25mW,200mW        |     25mW,200mW     |     25mW,200mW     |     25mW,200mW     | 25mW,200mW (500mW,<br />1W if with HAM license | 25mW,200mW (500mW,<br />1W if with HAM license |         25mW,200mW         |
-|    **Secured U.FL**    |        No        |           Yes           |         Yes         |         Yes         |         Yes         |                      Yes                      |                      Yes                      |             Yes             |
-|  **Antenna Included**  |   Not included   |       Not included       |    Not included    |    Not included    |    Not included    |                Polarized(RHCP)                |                Polarized(RHCP)                |           Dipole           |
-|  **Tramp/SmartAudio**  |        No        |        SmartAudio        |     SmartAudio     |     SmartAudio     |        Tramp        |                   SmartAudio                   |                   SmartAudio                   |             No             |
-|       **Keypad**       |        Yes        |            No            |         Yes         |         Yes         |         No         |                      Yes                      |                      Yes                      |             Yes             |
-|    **Application**    |       Whoop       |        TinyWhoop        |        Race        |        Race        |        Race        |                   Freestyle                   |                   Freestyle                   |          TinyWhoop          |
+|           VTX Name           |    Whoop(EOL)    |        Whoop Lite        |    Race V1(EOL)    |    Race V2(EOL)    |       Race V3       |              Freestyle V1 (EOL)              |                  Freestyle V2                  |         Eco VTX         |
+| :--------------------------: | :---------------: | :----------------------: | :-----------------: | :-----------------: | :-----------------: | :--------------------------------------------: | :--------------------------------------------: | :----------------------: |
+| **Dimension(mm x mm)** |       32x32       |          32x32          |        27x45        |        34x34        |        28x32        |                     40x40                     |                     29x30                     |          32x32          |
+|  **Mounting Pattern**  | 25.5x25.5<br />M2 | 25.5x25.5<br />M2 (Soft) | 20x20<br />M4(Soft) | 20x20<br />M4(Soft) | 20x20<br />M4(Soft) |              30x30<br />M3(Soft)              |                 20x20<br />M2                 | 25.5x25.5<br />M2 (Soft) |
+|   **Weight(grams)**   |        5.3        |           4.5           |          7          |          6          |         5.5         |                       28                       |                      22.3                      |           4.5           |
+|    **Power Input**    |      7V-17V      |          1S-3S          |       7V-17V       |       7V-17V       |       4V-12V       |           2S-6S (2rd batch or later)           |                     7-25V                     |          4V-12V          |
+| **Power Consumption** |       5~6W       |           5~6W           |        5~6W        |        5~6W        |        5~6W        |                     6~15W                     |                     6~15W                     |           5~6W           |
+|  **RF Power Output**  |    25mW,200mW    |        25mW,200mW        |     25mW,200mW     |     25mW,200mW     |     25mW,200mW     | 25mW,200mW (500mW,<br />1W if with HAM license | 25mW,200mW (500mW,<br />1W if with HAM license |        25mW,200mW        |
+|    **Secured U.FL**    |        No        |           Yes           |         Yes         |         Yes         |         Yes         |                      Yes                      |                      Yes                      |           Yes           |
+|  **Antenna Included**  |   Not included   |       Not included       |    Not included    |    Not included    |    Not included    |                Polarized(RHCP)                |                Polarized(RHCP)                |          Dipole          |
+|  **Tramp/SmartAudio**  |        No        |        SmartAudio        |     SmartAudio     |     SmartAudio     |        Tramp        |                   SmartAudio                   |                   SmartAudio                   |            No            |
+|       **Keypad**       |        Yes        |            No            |         Yes         |         Yes         |         No         |                      Yes                      |                      Yes                      |           Yes           |
+|    **Application**    |       Whoop       |        TinyWhoop        |        Race        |        Race        |        Race        |                   Freestyle                   |                   Freestyle                   |        TinyWhoop        |
 
 ## **General Consideration for VTX installation**
 
@@ -326,6 +326,35 @@ The HDZero Freestyle V2 VTX is our 2nd generation 5.8GHz digital video transmitt
 | RX                   | Yellow      | FC TX               |
 | TX                   | White       | FC RX               |
 | SA                   | Blue        | FC SA(TX), Optional |
+
+### HDZero Eco Video Video Transmitter
+
+HDZero ECO Bundle is designed to bring digital FPV to more pilots by offering a low cost, light weight, and durable alternative to analog video. The digital video signal has stable color reproduction and 720p progressive scan video with the low latency HDZero is known for.
+This budget-friendly Air Unit is a groundbreaking product—it's the first VTX/camera combination that utilizes a HD composite video signal, eliminating the need for a delicate MIPI cable.
+The ECO FPV System was meticulously designed for ultra-lightweight drones like Tiny Whoops, where every fraction of a gram counts. The camera's huge 98deg vertical FOV is perfect for fast indoor proximity flying. The ECO VTX weighs approximately 4.5g, while the camera (including wires) comes in at about 1.6g. With the included 0.2g dipole antenna, the entire Eco Bundle weighs about mere 6.3g in total.
+
+<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_Eco_intro.png" style="width:100">
+
+#### HDZero Eco VTX Specifications
+
+- Composite HD Video Interface
+- 1S-3S Input
+- 25mW/200mW RF Output
+- 25 x 25 M2 Soft Mounting
+- Antenna Retention
+- 4.5grams/4mm Thickness
+
+#### HDZero Eco camera Specifications
+
+- 14mm wide x 16 tall x 13mm thick
+- 1.6g weight with cable
+- 1/3” CMOS sensor
+- FOV: 4:3  D:150° H:120° V:98°
+- Suggested Setting
+  - Sharpness: 15
+  - Saturation: 8
+  - R Surp: 8
+  - Brightness: 45
 
 ## VTX Sockets
 
