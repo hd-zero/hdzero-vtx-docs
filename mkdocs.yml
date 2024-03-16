@@ -17,6 +17,9 @@ plugins:
 extra:
   version: version
 
+extra_css:
+  - hdzeroextra.css
+  
 repo_url: https://github.com/hd-zero/hdzero-vtx-docs
 repo_name: 'Github'
 edit_uri: 'blob/main/docs/'
