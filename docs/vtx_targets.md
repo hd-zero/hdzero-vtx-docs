@@ -383,8 +383,8 @@ This VTX does not support SmartAudio or Tramp.
 | **Race V3**             |         B         |              |                  |      F      |        G        |
 | **Race V2(EOL)**        |         A         |       C       |                  |            |        G        |
 | **Race V1(EOL)**        |         A         |       C       |         D         |            |        G        |
-| **Whoop Lite**          |         A         |       C       |                  |            |        G        |
-| **Whoop(EOL)**          |         B         |              |                  |            |        G        |
+| **Whoop Lite**          |         B         |               |                  |            |        G        |
+| **Whoop(EOL)**          |         A         |       C       |                  |            |        G        |
 | **Foxeer VTX**          |         A         |       C       |                  |            |        G        |
 
 
