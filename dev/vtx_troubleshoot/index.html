@@ -123,7 +123,7 @@
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#description_6">Description</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#suolutions">Suolutions</a>
+    <li class="toctree-l3"><a class="reference internal" href="#solutions_7">Solutions</a>
     </li>
         </ul>
     </li>
@@ -354,14 +354,18 @@ If using the VTX on a bench always use a fan too aid cooling, otherwise try swit
 <h4 id="5-if-you-have-a-keypad-plugged-in-remove-it">5. If you have a keypad plugged in, remove it.</h4>
 <h2 id="vtx-interferes-with-gps">VTX interferes with GPS</h2>
 <h3 id="description_5">Description</h3>
-<p>After turning on VTX RF, the GPS will lose 4~5 stars.</p>
+<p>After turning on VTX RF, the GPS will lose 4~5 satellites.</p>
 <h3 id="solutions_6">Solutions</h3>
 <h4 id="1-the-vtx-installation-location-is-far-away-from-the-gps-module">1. The VTX installation location is far away from the GPS module.</h4>
 <h4 id="2-keep-the-vtx-antenna-away-from-the-gps-module">2. Keep the VTX antenna away from the GPS module.</h4>
 <h2 id="fc-dropping-to-bootloader">FC dropping to bootloader</h2>
 <h3 id="description_6">Description</h3>
-<h3 id="suolutions">Suolutions</h3>
-<h4 id="add-a-200ohm-resistor-between-the-wire-from-fc-uarttx-to-vtx-uartrx">Add a 200ohm resistor between the wire from FC UART.TX to VTX UART.RX</h4>
+<p>In versions of Betaflight prior to 4.4.2, when MSP+OSD is enabled on a uart connected to an HDZero VTX and the VTX is unpowered (such as when configuring with only USB power), the FC will be prone to crash to DFU mode when switching pages in Configurator.
+A discussion of this problem can be seen <a href="https://github.com/betaflight/betaflight/issues/12723">here</a></p>
+<p>INav is unaffected.</p>
+<h3 id="solutions_7">Solutions</h3>
+<h4 id="1-upgrade-to-betaflight-442-or-later">1. Upgrade to Betaflight 4.4.2 or later</h4>
+<h4 id="2-a-work-around-for-this-problem-was-to-add-a-200ohm-resistor-between-the-wire-from-fc-uarttx-to-vtx-uartrx">2. A work around for this problem was to add a 200ohm resistor between the wire from FC UART.TX to VTX UART.RX</h4>
               
             </div>
           </div><footer>
