@@ -242,7 +242,7 @@ Make sure pit mode is off
 
 ### Description
 
-After turning on VTX RF, the GPS will lose 4~5 stars.
+After turning on VTX RF, the GPS will lose 4~5 satellites.
 
 ### Solutions
 
@@ -254,6 +254,14 @@ After turning on VTX RF, the GPS will lose 4~5 stars.
 
 ### Description
 
-### Suolutions
+In versions of Betaflight prior to 4.4.2, when MSP+OSD is enabled on a uart connected to an HDZero VTX and the VTX is unpowered (such as when configuring with only USB power), the FC will be prone to crash to DFU mode when switching pages in Configurator.
+A discussion of this problem can be seen [here](https://github.com/betaflight/betaflight/issues/12723)
 
-#### Add a 200ohm resistor between the wire from FC UART.TX to VTX UART.RX
+INav is unaffected.
+
+### Solutions
+
+#### 1. Upgrade to Betaflight 4.4.2 or later
+
+#### 2. A work around for this problem was to add a 200ohm resistor between the wire from FC UART.TX to VTX UART.RX
+
