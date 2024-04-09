@@ -95,7 +95,10 @@ The ECO FPV System was meticulously designed for ultra-lightweight drones like T
   - R Surp: 8
   - Brightness: 45
 
+Important Notes:
 
+- It is recommended to use VBAT for power supply.
+- When using BEC for power supply, ensure that the BEC's output capability is at least 5V@2A.
 
 ### HDZero Freestyle V2 Video Transmitter
 
