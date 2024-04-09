@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>User Manual - HDZero VTX Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../hdzeroextra.css" rel="stylesheet" />
+        <link href="../css/version-select.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "User Manual";
+        var mkdocs_page_input_path = "vtx_user_manual.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> HDZero VTX Docs
+        </a>
+        <div class="version">
+          version
+        </div><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../vtx_targets/">VTX Target</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../camera_targets/">Camera Target</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">User Manual</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#power">Power</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#led">Led</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#red-led">RED LED</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#blue-led">BLUE LED</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#keypad">Keypad</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#uart">UART</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#baud-rate">Baud rate</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#osd-setup">OSD setup</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#prerequisition">Prerequisition</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#update-vtx-and-vrxgoggle-firmware">Update VTX and VRX/Goggle firmware</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#solderconnect-uart-to-and-available-on-your-fc-board">Solder/Connect UART to and available on your FC board</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#flight-controller-configurationuse-betaflight-as-example">Flight Controller Configuration(Use betaflight as example)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#vtx-table">VTX Table</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#stick-command">Stick Command</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#vtx-menu">VTX Menu</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#channel">CHANNEL</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#power_1">POWER</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lp_mode">LP_MODE</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pit_mode">PIT_MODE</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#offset_25mw">OFFSET_25MW</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#team_race">TEAM_RACE</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#shortcuts">SHORTCUTS</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#note">Note</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#smartaudio-protocolnot-recommend">Smartaudio Protocol（Not recommend）</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#unlock-rf-power-limit">Unlock RF POWER Limit</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#unlock-low-band">Unlock Low band</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#reset-setting">Reset setting</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../vtx_troubleshoot/">Troubleshoot</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">HDZero VTX Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">User Manual</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/hd-zero/hdzero-vtx-docs/blob/main/docs/vtx_user_manual.md" class="icon icon-github"> Edit on Github</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="user-manual">User Manual</h1>
+<h2 id="power">Power</h2>
+<p>Different VTXs have different power requirements, please refer to the <strong>target</strong> for detial.</p>
+<h2 id="led">Led</h2>
+<p>All VTXes have two LEDs</p>
+<h3 id="red-led">RED LED</h3>
+<p>power indicator light.</p>
+<p>The VTX lights up when powered on and goes off when powered off. It will not flash.</p>
+<h3 id="blue-led">BLUE LED</h3>
+<p>Working status indicator light.</p>
+<ul>
+<li>Flicker 3x after boot indicates MSP signaling is detected.</li>
+<li>Specific modes are represented with patterns of long (1s) and short (1/4s) pulses, within a 4s timeframe</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/LED_Patterns.png" style="width:100"></p>
+<p>Note the first three in the list, are error cases and are checked ahead of any others, and will be displayed if in force.
+This means for example, that if the vtx is in heat protection mode, setting the board to 0mW will not be apparent.</p>
+<h2 id="keypad">Keypad</h2>
+<p>Note not all VTXes support keypad.</p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/Keypad_Usage.png" style="width:100"></p>
+<h2 id="uart">UART</h2>
+<ul>
+<li>VTX is connected to FC through UART to implement OSD and other functions that require remote control cooperation.</li>
+<li>Do not use soft serial uart.</li>
+<li>VTX TX &lt;=&gt; FC RX</li>
+<li>VTX RX &lt;=&gt; FC TX</li>
+</ul>
+<h3 id="baud-rate">Baud rate</h3>
+<p>VTX supports two baud rates: 115200 and 230400.</p>
+<p><strong><em>Note: HDZero Race V3 VTX only support 115200 baud rate.</em></strong></p>
+<p>During the initialization phase, VTX will detect whether the serial port can correctly receive osd data. If the correct osd data packet is not received for more than 2 seconds, VTX will automatically switch the baud rate.</p>
+<h2 id="osd-setup">OSD setup</h2>
+<h3 id="prerequisition">Prerequisition</h3>
+<ul>
+<li>Betaflight &gt;= v4.4.0</li>
+<li>iNav &gt;= 4.1.0</li>
+<li>FlightOne &gt;= 10.1.1.5576 | 10.1 Alpha 29</li>
+</ul>
+<h3 id="update-vtx-and-vrxgoggle-firmware">Update VTX and VRX/Goggle firmware</h3>
+<ul>
+<li>Download the latest firmware from <a href="www.hd-zero.com/document">www.hd-zero.com/document</a>.</li>
+<li>Firmware package(Rev_ddmmyyyy.zip) contains the firmware for all the VTX and VRX/Goggle.</li>
+<li>You can also get the latest release fw of vtx and goggle from github.</li>
+</ul>
+<h3 id="solderconnect-uart-to-and-available-on-your-fc-board">Solder/Connect UART to and available on your FC board</h3>
+<p>See <strong>UART</strong> abve.</p>
+<h3 id="flight-controller-configurationuse-betaflight-as-example">Flight Controller Configuration(Use betaflight as example)</h3>
+<ul>
+<li>Connect the FC board to computer with an USB cable</li>
+<li>Start Betaflight Configurator</li>
+<li>Go to Port TAB</li>
+<li>Activite VTX (MSP + Displayport) on UART number that is used to connect the VTX</li>
+<li>Save and Reboot</li>
+</ul>
+<p><strong>Note:</strong> A soft UART is <em>not</em> supported for VTX (MSP + Displayport).</p>
+<p>As an example: UART3 on picture below is used for VTX (MSP + Displayport).</p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/Betaflight_port_config.png" style="width:100"></p>
+<h2 id="vtx-table">VTX Table</h2>
+<p>You really don't need to care about it because VTX will automatically configure the vtx table of the FC.</p>
+<h2 id="stick-command">Stick Command</h2>
+<p>Before using stick command, make sure that fc uart is set correctly.</p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/stick_command.png" style="width:100"></p>
+<h2 id="vtx-menu">VTX Menu</h2>
+<p>All HDZero VTXes have the following settings for its RF power level management. These settings can be changed using the VTX menu.</p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/vtx_menu.png" style="width:100"></p>
+<h3 id="channel">CHANNEL</h3>
+<ul>
+<li>All VTXes support R1-R8, E1, F1, F2 and F4 channels. You will get an additional 8 channels L1-L8 if you unlock the lowband.</li>
+</ul>
+<h3 id="power_1">POWER</h3>
+<ul>
+<li>The desired RF power level is selectable between 25mW, 200mW (and 500mW or MAX for certain VTXes). The actual RF power level depends on the following settings and FC status.</li>
+</ul>
+<h3 id="lp_mode">LP_MODE</h3>
+<ul>
+<li><strong>OFF:</strong> The output RF power will be set to <em>POWER</em> setting.</li>
+<li><strong>ON:</strong>  If <em>PIT_MODE</em> is OFF and the quad is disarmed, the RF power level will be forced to 25mW regardless of <strong>POWER</strong> setting.The output RF power will be set to <em>POWER</em> setting when quad is armed.</li>
+<li><strong>1ST</strong>: If <em>PIT_MODE</em> is OFF, the RF power level will be forced to 25mW regardless of <em>POWER</em> setting when QUAD is power on, The output RF power will be set to <em>POWER</em> setting when QUAD is armed.</li>
+<li><strong>Note that after first arm, the vtx will not enter lp mode again until vbat power is reset.</strong></li>
+</ul>
+<h3 id="pit_mode">PIT_MODE</h3>
+<ul>
+<li><strong>OFF:</strong> The output RF power will be set to <em>POWER</em> setting.</li>
+<li><strong>P1MW:</strong> The output RF power will be 0.1mW (in order to not interfere with other pilots) in this mode. If the quad is armed, RF output power will be automatically set to the <em>POWER</em> within seconds.</li>
+<li><strong>0MW:</strong> There will be zero RF output in this mode. If quad is armed, RF output power will be automatically set to <em>POWER</em> within seconds.</li>
+<li><strong>Note that after first arm, the vtx will not enter pit mode again until vbat power is reset.</strong></li>
+</ul>
+<h3 id="offset_25mw">OFFSET_25MW</h3>
+<ul>
+<li>It is to fine tune the RF output power to be exactly 25mW. The range is [-10:10], and step size is about 0.3dB per step.</li>
+</ul>
+<h3 id="team_race">TEAM_RACE</h3>
+<ul>
+<li><strong>OFF:</strong> The RF power of VTXs after power-on is determined by other settings.</li>
+<li><strong>MODE1:</strong> VTX RF remains off (0mW) after power-up, and exits 0mW under the following conditions: 1. Quad is armed. 2. Exit 0mw mode through stick command. 3. Configure VTX power to non-0mW through FC UART or SmartAudio. If the UART communication between VTX and FC is disconnected, VTX will turn off the RF until UART communication is restored and repower the VTX.</li>
+<li><strong>MODE2</strong>: VTX RF remains off(0mW) after power-up, and exits 0mW under the following conditions: 1. Quad is armed. 2. Exit 0mw mode through stick command. 3. Configure VTX power to non-0mW through FC.</li>
+</ul>
+<h3 id="shortcuts">SHORTCUTS</h3>
+<ul>
+<li>Two different stick commands are provided for switching or exiting 0mW. See the Stick Movement diagram for details.</li>
+</ul>
+<h3 id="note">Note</h3>
+<ul>
+<li>HDZero VTX will still become hot even on P1mW mode. It is better to keep VTX on 0mW when it will be idle for a while. Though the receiver will not have live video on this mode, it will come back as soon as the quad is armed.</li>
+<li>Use sticks shortcut to enter 0mW, and to exit 0mW mode.</li>
+</ul>
+<h2 id="smartaudio-protocolnot-recommend">Smartaudio Protocol（Not recommend）</h2>
+<p>HDZero VTX can be controlled by FC using the TBS SmartAudio V2.1. In this case, the VTX will output RF power and channel commanded by FC directly. To avoid conflict, If SmartAudio is enabled, only OFFSET_25MW and SHORTCUTS are available in the VTX menu.</p>
+<p>Note:</p>
+<ul>
+<li>HDZero VTX outputs 0.1mW when SmartAudio PIT mode is ON.</li>
+<li>HDZero VTX does not support SmartAudio out range PIT mode.</li>
+<li>When HDZero Race VTX boots up, it will automatically detect the existence of a valid SmartAudio link with FC within 10 seconds. If the link exists, FC will fully control race VTX’s RF output power and working frequency.</li>
+</ul>
+<p>You don't need to set up the vtx table manually for betaflight, VTX will set it up automatically via uart port.</p>
+<p>With SmartAudio, the user can change channel number and power level even when quad is in the air.</p>
+<h2 id="unlock-rf-power-limit">Unlock RF POWER Limit</h2>
+<p>HDZero Freestyle V1/V2 VTX is compliant with FCC 47 CFR 97.215(c). It is limited to 25mW/200mW out of the box, but it is capable of up to 1W if you have the required HAM radio license to use this power output. Download the special firmware from <a href="http://www.hd-zero.com/document">www.hd-zero.com/document</a> to enable higher RF output modes.</p>
+<p>Here are the steps:</p>
+<ol>
+<li>Download firmware Unlock_FreestyleVTX.zip.</li>
+<li>Unzip it to the root directory of SD Card.</li>
+<li>Use the VRX to flash this firmware to the VTX.</li>
+<li>Power on the VTX, BLUE LED will flash 3 times after it is done. This step unlocks VTX.</li>
+<li>Power the VTX off.</li>
+<li>Unzip normal VTX firmware to the root directory of SD Card.</li>
+<li>Use the VRX to flash this firmware to the VTX.</li>
+<li>The higher RF output options will now be available.</li>
+</ol>
+<p>Please note once the VTX is unlocked, there is no need to unlock it again when there is newer firmware available.</p>
+<h2 id="unlock-low-band">Unlock Low band</h2>
+<p>The VTX low band needs to be unlocked before it can be used. Make sure your region allows low band before unlocking. To unlock low band for VTX:</p>
+<p>Here are the steps:</p>
+<ol>
+<li>Download Unlock_Lowband.zip from <a href="http://www.hd-zero.com/document">www.hd-zero.com/document</a>.</li>
+<li>Unzip and flash as firmware update to your VTX.</li>
+<li>Power on VTX, BLUE LED flashes 5 times and then goes out, unlock completed.</li>
+<li>Flash the latest release firmware to your VTX. When you switch channels in the VTX menu you will see additional channels from L1 to L8.</li>
+</ol>
+<h2 id="reset-setting">Reset setting</h2>
+<p>Reset VTX settings to factory settings.</p>
+<ul>
+<li>Short the TX and RX of VTX and disconnect from FC uart.</li>
+<li>Power up the VTX.</li>
+<li>Wait 5~10 seconds, then power off. The reset setting is completed.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../camera_targets/" class="btn btn-neutral float-left" title="Camera Target"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../vtx_troubleshoot/" class="btn btn-neutral float-right" title="Troubleshoot">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../camera_targets/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../vtx_troubleshoot/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+      <script src="../js/version-select.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
