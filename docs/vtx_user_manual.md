@@ -19,7 +19,7 @@ The VTX lights up when powered on and goes off when powered off. It will not fla
 Working status indicator light.
 
 - Flicker 3x after boot indicates MSP signaling is detected.
-- Specific modes are represented with patterns of long (1s) and short (1/4s) pulses, within a 4s timeframe
+- Specific modes are represented with patterns of long (1 seconds) and short (1/4 seconds) pulses, within a 4 seconds timeframe
 
 <img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/LED_Patterns.png" style="width:100">
 
