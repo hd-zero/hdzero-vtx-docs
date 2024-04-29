@@ -177,11 +177,3 @@ Here are the steps:
 2. Unzip and flash as firmware update to your VTX.
 3. Power on VTX, BLUE LED flashes 5 times and then goes out, unlock completed.
 4. Flash the latest release firmware to your VTX. When you switch channels in the VTX menu you will see additional channels from L1 to L8.
-
-## Reset setting
-
-Reset VTX settings to factory settings.
-
-- Short the TX and RX of VTX and disconnect from FC uart.
-- Power up the VTX.
-- Wait 5~10 seconds, then power off. The reset setting is completed.
