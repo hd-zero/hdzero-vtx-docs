@@ -4,7 +4,7 @@
 
 |                          VTX | Weight | Size (mm) |  Mounting Pattern  | Voltage Input | Power Consumption |                RF Power Output                | Secured U.FL | Antenna | Tramp/SmartAudio | Keypad | Application |
 | ---------------------------: | -----: | :-------: | :----------------: | :------------: | :---------------: | :-------------------------------------------: | :----------: | :-----: | :--------------: | :----: | :---------: |
-|                         AIO5 |   5.7g | 28.5x28.5 | 25.5x25.5 M2(Soft) |   2.5V-4.35V   |         -         |                  25mW,200mW                  |      No      | Dipole |        No        |  Yes  |  TinyWhoop  |
+|                         AIO5 |   5.7g | 28.5x28.5 | 25.5x25.5 M2(Soft) |   2.5V-4.35V   |         -         |                  25mW,200mW                  |      No      | Dipole |        No        |   No   |  TinyWhoop  |
 |                **Eco** |   4.5g |   32x32   | 25.5x25.5 M2(Soft) |     4V-12V     |       5~6W       |                  25mW,200mW                  |     Yes     | Dipole |        No        |  Yes  |  TinyWhoop  |
 |       **Freestyle V2** |  22.3g |   29x30   |      20x20 M2      |     7-25V     |       6~15W       | 25mW,200mW<br />(500mW,1W ***(a)*** ) |     Yes     |  RHCP  |    SmartAudio    |  Yes  |  Freestyle  |
 | **Freestyle V1 (EOL)** |  28.0g |   40x40   |   30x30 M3(Soft)   | 2S-6S***(b)*** |       6~15W       | 25mW,200mW<br />(500mW,1W ***(a)*** ) |     Yes     |  RHCP  |    SmartAudio    |  Yes  |  Freestyle  |
@@ -419,6 +419,7 @@ This VTX does not support SmartAudio or Tramp.
 
 |                          VTX | f/w Update Socket | Keypad Socket | Power/UART Socket | HD VTX Plug | Camera Connector |
 | ---------------------------: | :---------------: | :-----------: | :---------------: | :---------: | :--------------: |
+|                         Aio5 |         B         |              |                  |            |                  |
 |                **Eco** |         B         |       C       |                  |            |                  |
 |       **Freestyle V2** |         B         |       C       |         E         |            |        G        |
 | **Freestyle V1 (EOL)** |         A         |       C       |         E         |            |        G        |
