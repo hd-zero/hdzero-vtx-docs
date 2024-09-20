@@ -65,6 +65,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#targets">Targets</a>
         <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#hdzero-aio5">HDZero AIO5</a>
+    </li>
     <li class="toctree-l3"><a class="reference internal" href="#hdzero-eco-video-video-transmitter">HDZero Eco Video Video Transmitter</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#hdzero-freestyle-v2-video-transmitter">HDZero Freestyle V2 Video Transmitter</a>
@@ -135,10 +137,10 @@
 <tr>
 <th style="text-align: right;">VTX</th>
 <th style="text-align: right;">Weight</th>
-<th style="text-align: center;">Size<BR>(mm)</th>
+<th style="text-align: center;">Size <code>&lt;BR&gt;</code>(mm)</th>
 <th style="text-align: center;">Mounting Pattern</th>
 <th style="text-align: center;">Voltage Input</th>
-<th style="text-align: center;">Power</BR>Consumption</th>
+<th style="text-align: center;">Power <code>&lt;/BR&gt;</code>Consumption</th>
 <th style="text-align: center;">RF Power Output</th>
 <th style="text-align: center;">Secured U.FL</th>
 <th style="text-align: center;">Antenna</th>
@@ -148,6 +150,20 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align: right;">AIO5</td>
+<td style="text-align: right;">5.7g</td>
+<td style="text-align: center;">28.5x28.5</td>
+<td style="text-align: center;">25.5x25.5 M2(Soft)</td>
+<td style="text-align: center;">2.5V-4.35V</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">25mW,200mW</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Dipole</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">TinyWhoop</td>
+</tr>
 <tr>
 <td style="text-align: right;"><strong>Eco</strong></td>
 <td style="text-align: right;">4.5g</td>
@@ -169,7 +185,7 @@
 <td style="text-align: center;">20x20 M2</td>
 <td style="text-align: center;">7-25V</td>
 <td style="text-align: center;">6~15W</td>
-<td style="text-align: center;">25mW,200mW <br />(500mW,1W <strong><em>(a)</em></strong> )</td>
+<td style="text-align: center;">25mW,200mW<br />(500mW,1W <strong><em>(a)</em></strong> )</td>
 <td style="text-align: center;">Yes</td>
 <td style="text-align: center;">RHCP</td>
 <td style="text-align: center;">SmartAudio</td>
@@ -181,9 +197,9 @@
 <td style="text-align: right;">28.0g</td>
 <td style="text-align: center;">40x40</td>
 <td style="text-align: center;">30x30 M3(Soft)</td>
-<td style="text-align: center;">2S-6S <strong><em>(b)</em></strong></td>
+<td style="text-align: center;">2S-6S<strong><em>(b)</em></strong></td>
 <td style="text-align: center;">6~15W</td>
-<td style="text-align: center;">25mW,200mW <br />(500mW,1W <strong><em>(a)</em></strong> )</td>
+<td style="text-align: center;">25mW,200mW<br />(500mW,1W <strong><em>(a)</em></strong> )</td>
 <td style="text-align: center;">Yes</td>
 <td style="text-align: center;">RHCP</td>
 <td style="text-align: center;">SmartAudio</td>
@@ -262,7 +278,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>(a)</strong> Only in permitted regions with HAM Licence<BR>
+<p><strong>(a)</strong> Only in permitted regions with HAM Licence<code>&lt;BR&gt;</code>
 <strong>(b)</strong> 2nd batch or later</p>
 <h2 id="general-consideration-for-vtx-installation"><strong>General Consideration for VTX installation</strong></h2>
 <h3 id="caution-ufl-connectors-are-fragile"><strong>Caution: UFL Connectors Are Fragile</strong></h3>
@@ -305,6 +321,45 @@
 <li>If the VTX is mounted on the bottom of the stack, the VTX needs to be upside down (U.FL socket faces down) and needs to have a minimum of 5mm distance from the  bottom carbon fiber plate.</li>
 </ul>
 <h2 id="targets">Targets</h2>
+<h3 id="hdzero-aio5">HDZero AIO5</h3>
+<p>HDZero AIO5 is the world’s first digital video AIO, enabling bind and fly 65mm whoops to weigh less than 19.5g. AIO5 integrates a F4 flight controller, HDZero 5.8GHz digital video transmitter, SPI 2.4GHz ExpressLRS 3.0 receiver, DSHOT protocol 4-in-1 ESC, and a 5V/1A BEC. It is ideal for tiny whoop racing and freestyle.</p>
+<p>The HDZero AIO5 is an excellent collaboration between Happymodel and HDZero. It is available at major FPV resellers worldwide, and also at Happymodel and HDZero official online shops.</p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_Aio_intro_1.png" style="width:100"></p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_Aio_intro_2.png" style="width:100"></p>
+<h4 id="specifications">Specifications</h4>
+<ul>
+<li>MCU: STM32F411 (100MHz, 512K Flash)</li>
+<li>Gyro: BMI270</li>
+<li>On board voltage and amperage meters</li>
+<li>Built-in 5A(each) BLHeli_S 4-in-1 ESC</li>
+<li>MCU: EFM8BB21</li>
+<li>HV Current: 5A continuous peak 6A (3 seconds)</li>
+<li>Factory firmware: O_H_5_48_V0.19.2.HEX</li>
+<li>Dshot600 ready</li>
+<li>Built-in 5.8G HDZero VTX</li>
+<li>RF output: 25mW/200mW</li>
+<li>Supported channels: R1-R8, F2/F4, L1-L8</li>
+<li>UFL connector (ultra-lite linear antenna included)</li>
+<li>Built-in SPI ExpressLRS 2.4GHz receiver</li>
+<li>Packet rate option: 25Hz/50Hz//150Hz/250Hz/500Hz</li>
+<li>pre-soldered enamel wire antenna</li>
+<li>Telemetry output power: &lt;12dBm</li>
+<li>Built-in 5V 1A BEC</li>
+<li>Flight controller firmware target: CRAZYBEEF4SX1280</li>
+<li>Power supply: 1S battery(2.5V - 4.35V)</li>
+<li>Fully compatible with the popular whoop frames</li>
+<li>Board sizeL 28.5x28.5mm with a 25.5x25.5 mounting hole size</li>
+<li>Weight: 5.7g(without motor plugs), 6.3g(with motor plugs)</li>
+</ul>
+<h4 id="installation-notes">Installation notes</h4>
+<h5 id="elrs-antenna">ELRS antenna</h5>
+<p>A line antenna(1/4 wavelength) for the ELRS receiver is pre-soldered and positioned close to the board for low-profile and easy packaging. However, <strong>the ELRS antenna needs to be lifted to a maintain at least 3mm of clearance from the board</strong>.</p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_Aio_elrs_antenna_1.png" style="width:100"></p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_Aio_elrs_antenna_2.png" style="width:100"></p>
+<h5 id="vtx-antenna">VTX antenna</h5>
+<p>The HDZero VTX integrated into the AIO5 has a specific requirement to prevent video noise caused by the video RF sighal being routed back to the onboard power amplifier.</p>
+<p><strong>The VTX antenna should be mounted outward, not inward, on the board.</strong></p>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_Aio_vtx_antenna.png" style="width:100"></p>
 <h3 id="hdzero-eco-video-video-transmitter">HDZero Eco Video Video Transmitter</h3>
 <p>HDZero ECO Bundle is designed to bring digital FPV to more pilots by offering a low cost, light weight, and durable alternative to analog video. The digital video signal has stable color reproduction and 720p progressive scan video with the low latency HDZero is known for.
 This budget-friendly Air Unit is a groundbreaking product—it's the first VTX/camera combination that utilizes a HD composite video signal, eliminating the need for a delicate MIPI cable.
