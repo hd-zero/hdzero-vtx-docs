@@ -2,20 +2,20 @@
 
 ## Summary
 
-|          VTX            | Weight| Size<BR>(mm)         | Mounting Pattern  | Voltage Input | Power</BR>Consumption | RF Power Output |                         Secured U.FL | Antenna | Tramp/SmartAudio| Keypad | Application |
-| ----------------------: | ----: | :---------------: | :---------------: |:-----------: | :----------------: | :-------------: |                         :----------: | :---------------: | :----------:    | :----: | :---------: |
-| **Eco**                 | 4.5g  | 32x32             | 25.5x25.5 M2(Soft)|4V-12V        |  5~6W	    | 25mW,200mW                                  | Yes         | Dipole          | No                | Yes    | TinyWhoop |
-| **Freestyle V2**        | 22.3g | 29x30             | 20x20 M2          |7-25V         |  6~15W          | 25mW,200mW <br />(500mW,1W ***(a)*** )| Yes         | RHCP            | SmartAudio        | Yes    | Freestyle |
-| **Freestyle V1 (EOL)**  | 28.0g | 40x40             | 30x30 M3(Soft)    |2S-6S ***(b)***       |6~15W| 25mW,200mW <br />(500mW,1W ***(a)*** )| Yes         | RHCP            | SmartAudio        | Yes    | Freestyle |
-| **Race V3**             | 5.5g  | 28x32             | 20x20 M4(Soft)    |4V-12V        |  5~6W           | 25mW,200mW                                  | Yes         | No              | Tramp             | No     | Race      |
-| **Race V2(EOL)**        | 6.0g  | 34x34             | 20x20 M4(Soft)    |7V-17V        |  5~6W           | 25mW,200mW                                  | Yes         | No              | SmartAudio        | Yes    | Race      |
-| **Race V1(EOL)**        | 7.0g  | 27x45             | 20x20 M4(Soft)    |7V-17V        |  5~6W           | 25mW,200mW                                  | Yes         | No              | SmartAudio        | Yes    | Race      |
-| **Whoop Lite**          | 4.5g  | 32x32             | 25.5x25.5 M2(Soft)|1S-3S         |  5~6W           | 25mW,200mW                                  | Yes         | No              | SmartAudio        | No     | TinyWhoop |
-| **Whoop(EOL)**          | 5.3g  | 32x32             | 25.5x25.5 M2      |7V-17V        |  5~6W           | 25mW,200mW                                  | No          | No              | No                | Yes    | Whoop     |
+|                          VTX | Weight | Size `<BR>`(mm) |  Mounting Pattern  | Voltage Input | Power `</BR>`Consumption |                RF Power Output                | Secured U.FL | Antenna | Tramp/SmartAudio | Keypad | Application |
+| ---------------------------: | -----: | :---------------: | :----------------: | :------------: | :------------------------: | :-------------------------------------------: | :----------: | :-----: | :--------------: | :----: | :---------: |
+|                         AIO5 |   5.7g |     28.5x28.5     | 25.5x25.5 M2(Soft) |   2.5V-4.35V   |             -             |                  25mW,200mW                  |      No      | Dipole |        No        |  Yes  |  TinyWhoop  |
+|                **Eco** |   4.5g |       32x32       | 25.5x25.5 M2(Soft) |     4V-12V     |            5~6W            |                  25mW,200mW                  |     Yes     | Dipole |        No        |  Yes  |  TinyWhoop  |
+|       **Freestyle V2** |  22.3g |       29x30       |      20x20 M2      |     7-25V     |           6~15W           | 25mW,200mW<br />(500mW,1W ***(a)*** ) |     Yes     |  RHCP  |    SmartAudio    |  Yes  |  Freestyle  |
+| **Freestyle V1 (EOL)** |  28.0g |       40x40       |   30x30 M3(Soft)   | 2S-6S***(b)*** |           6~15W           | 25mW,200mW<br />(500mW,1W ***(a)*** ) |     Yes     |  RHCP  |    SmartAudio    |  Yes  |  Freestyle  |
+|            **Race V3** |   5.5g |       28x32       |   20x20 M4(Soft)   |     4V-12V     |            5~6W            |                  25mW,200mW                  |     Yes     |   No   |      Tramp      |   No   |    Race    |
+|       **Race V2(EOL)** |   6.0g |       34x34       |   20x20 M4(Soft)   |     7V-17V     |            5~6W            |                  25mW,200mW                  |     Yes     |   No   |    SmartAudio    |  Yes  |    Race    |
+|       **Race V1(EOL)** |   7.0g |       27x45       |   20x20 M4(Soft)   |     7V-17V     |            5~6W            |                  25mW,200mW                  |     Yes     |   No   |    SmartAudio    |  Yes  |    Race    |
+|         **Whoop Lite** |   4.5g |       32x32       | 25.5x25.5 M2(Soft) |     1S-3S     |            5~6W            |                  25mW,200mW                  |     Yes     |   No   |    SmartAudio    |   No   |  TinyWhoop  |
+|         **Whoop(EOL)** |   5.3g |       32x32       |    25.5x25.5 M2    |     7V-17V     |            5~6W            |                  25mW,200mW                  |      No      |   No   |        No        |  Yes  |    Whoop    |
 
-**(a)** Only in permitted regions with HAM Licence<BR>
+**(a)** Only in permitted regions with HAM Licence`<BR>`
 **(b)** 2nd batch or later
-
 
 ## **General Consideration for VTX installation**
 
@@ -65,6 +65,59 @@ To avoid these concerns, follow this guidance for mounting the VTX:
 - If the VTX is mounted on the bottom of the stack, the VTX needs to be upside down (U.FL socket faces down) and needs to have a minimum of 5mm distance from the  bottom carbon fiber plate.
 
 ## Targets
+
+### HDZero AIO5
+
+HDZero AIO5 is the world’s first digital video AIO, enabling bind and fly 65mm whoops to weigh less than 19.5g. AIO5 integrates a F4 flight controller, HDZero 5.8GHz digital video transmitter, SPI 2.4GHz ExpressLRS 3.0 receiver, DSHOT protocol 4-in-1 ESC, and a 5V/1A BEC. It is ideal for tiny whoop racing and freestyle.
+
+The HDZero AIO5 is an excellent collaboration between Happymodel and HDZero. It is available at major FPV resellers worldwide, and also at Happymodel and HDZero official online shops.
+
+<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_Aio_intro_1.png" style="width:100">
+
+<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_Aio_intro_2.png" style="width:100">
+
+#### Specifications
+
+* MCU: STM32F411 (100MHz, 512K Flash)
+* Gyro: BMI270
+* On board voltage and amperage meters
+* Built-in 5A(each) BLHeli_S 4-in-1 ESC
+  * MCU: EFM8BB21
+  * HV Current: 5A continuous peak 6A (3 seconds)
+  * Factory firmware: O_H_5_48_V0.19.2.HEX
+  * Dshot600 ready
+* Built-in 5.8G HDZero VTX
+  * RF output: 25mW/200mW
+  * Supported channels: R1-R8, F2/F4, L1-L8
+  * UFL connector (ultra-lite linear antenna included)
+* Built-in SPI ExpressLRS 2.4GHz receiver
+  * Packet rate option: 25Hz/50Hz//150Hz/250Hz/500Hz
+  * pre-soldered enamel wire antenna
+  * Telemetry output power: <12dBm
+* Built-in 5V 1A BEC
+* Flight controller firmware target: CRAZYBEEF4SX1280
+* Power supply: 1S battery(2.5V - 4.35V)
+* Fully compatible with the popular whoop frames
+  * Board sizeL 28.5x28.5mm with a 25.5x25.5 mounting hole size
+* Weight: 5.7g(without motor plugs), 6.3g(with motor plugs)
+
+#### Installation notes
+
+##### ELRS antenna
+
+A line antenna(1/4 wavelength) for the ELRS receiver is pre-soldered and positioned close to the board for low-profile and easy packaging. However, **the ELRS antenna needs to be lifted to a maintain at least 3mm of clearance from the board**.
+
+<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_Aio_elrs_antenna_1.png" style="width:100">
+
+<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_Aio_elrs_antenna_2.png" style="width:100">
+
+##### VTX antenna
+
+The HDZero VTX integrated into the AIO5 has a specific requirement to prevent video noise caused by the video RF sighal being routed back to the onboard power amplifier.
+
+**The VTX antenna should be mounted outward, not inward, on the board.**
+
+<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_Aio_vtx_antenna.png" style="width:100">
 
 ### HDZero Eco Video Video Transmitter
 
@@ -128,8 +181,6 @@ The HDZero Freestyle V2 VTX is our 2nd generation 5.8GHz digital video transmitt
 | TX                   | White       | FC RX               |
 | SA                   | Blue        | FC SA(TX), Optional |
 
-
-
 ### HDZero Freestyle V1 Video Transmitter(EOL)
 
 The HDZero Freestyle V1 VTX offers unprecedented range and performance for the HDZero 5.8GHz digital FPV system. With its high maximum output power and robust construction, this VTX is perfect for freestyle and long-range builds.
@@ -179,8 +230,6 @@ The 2nd batch and later, supports 2S-6S, and the BEC is *not* included.
 - **Removing the heat sink is not recommended because it is part of the design.**
 - **Rotate the antenna as shown above before detaching it to reduce the risk of peeling off the UFL connector.**
 
-
-
 ### HDZero Race V3 Video Transmitter
 
 Designed for FPV racing, the HDZero Race V3 VTX is our 3rd generation digital video transmitter. With a voltage range starting at 4V, it can be powered by the 5V 1.5A regulator of most FC's or up to 12V for FC's that include a HD VTX plug. It is small (28x32x5mm) and light (5.5 grams). With a width of only 28mm, the VTX is now a similar width to many FC's, which improves durability and reduces weight. The antenna is securely attached with a metal bar and screws. No soldering needed – just plug the wire harness into a compatible HD-ready FC.
@@ -206,8 +255,6 @@ The HDZero Race V3 VTX offers high-quality video in 540p90, 720p60 and 1080p30 r
 The right figure shows the typical connection with FC supports MSP VTX protocol.
 
 The Race V3 supports direct connect with Ghost RX via its SA/Tramp port(TBD)
-
-
 
 ### HDZero Race V2 Video Transmitter (EOL)
 
@@ -252,8 +299,6 @@ Use the included zip-tie to secure MIPI cable and protect MIPI connector.
 
 - Read first: **General Consideration for VTX installation**
 - **Make sure to use a wider top plate to fully c****over this VTX for protection.**
-
-
 
 ### HDZero Race V1 Video Transmitter (EOL)
 
@@ -308,8 +353,6 @@ There are 2 methods to mount antenna on VTX:
 - Use included retention screws, nuts and plate.
 - Use included zip-ties.
 
-
-
 ### HDZero Whoop Lite Video Transmitter
 
 The HDZero Whoop lite VTX is a digital HD 720p 60fps video transmitter capable of delivering up to 200mw on 5.8GHz.
@@ -351,8 +394,6 @@ Solder pad:
 - Read first: **General Consideration for VTX installation**
 - This VTX does not support using keypad to tune channel and RF output power level. Ir is designed to work with flight controller.
 
-
-
 ### HDZero Whoop video Transmitter (EOL)
 
 The HDZero Whoop VTX is a digital HD 720p 60fps video transmitter capable of delivering up to 200mw on 5.8GHz.
@@ -374,48 +415,42 @@ This VTX does not support SmartAudio or Tramp.
 - Soft mount
 - Pay extra attention not to damage the small components when trying to remove the serrate corner
 
-
-
 ## VTX Sockets
 
-|          VTX            | f/w Update Socket | Keypad Socket | Power/UART Socket | HD VTX Plug | Camera Connector |
-| ----------------------: | :---------------: | :-----------: | :---------------: | :---------: | :--------------: |
-| **Eco**             |         B         |       C       |                  |            |                  |
-| **Freestyle V2**        |         B         |       C       |         E         |            |        G        |
-| **Freestyle V1 (EOL)**  |         A         |       C       |         E         |            |        G        |
-| **Race V3**             |         B         |              |                  |      F      |        G        |
-| **Race V2(EOL)**        |         A         |       C       |                  |            |        G        |
-| **Race V1(EOL)**        |         A         |       C       |         D         |            |        G        |
-| **Whoop Lite**          |         B         |               |                  |            |        G        |
-| **Whoop(EOL)**          |         A         |       C       |                  |            |        G        |
-| **Foxeer VTX**          |         A         |       C       |                  |            |        G        |
+|                          VTX | f/w Update Socket | Keypad Socket | Power/UART Socket | HD VTX Plug | Camera Connector |
+| ---------------------------: | :---------------: | :-----------: | :---------------: | :---------: | :--------------: |
+|                **Eco** |         B         |       C       |                  |            |                  |
+|       **Freestyle V2** |         B         |       C       |         E         |            |        G        |
+| **Freestyle V1 (EOL)** |         A         |       C       |         E         |            |        G        |
+|            **Race V3** |         B         |              |                  |      F      |        G        |
+|       **Race V2(EOL)** |         A         |       C       |                  |            |        G        |
+|       **Race V1(EOL)** |         A         |       C       |         D         |            |        G        |
+|         **Whoop Lite** |         B         |              |                  |            |        G        |
+|         **Whoop(EOL)** |         A         |       C       |                  |            |        G        |
+|         **Foxeer VTX** |         A         |       C       |                  |            |        G        |
 
+| f/w Update Socket            |
+| :--------------------------- |
+| **A:** 7-way SH 1.0mm  |
+| **B:** 7-way SUR 0.8mm |
 
+| Keypad Socket                |
+| :--------------------------- |
+| **C:** 6-way SUR 0.8mm |
 
-| f/w Update Socket  
-|:-------------------
-| **A:** 7-way SH 1.0mm  
-| **B:** 7-way SUR 0.8mm 
+| Power/UART Socket            |
+| :--------------------------- |
+| **D:** 6-way GH 1.25mm |
+| **E:** 5-way GH 1.25mm |
 
-| Keypad Socket    |
-|:-----------------|
-|**C:** 6-way SUR 0.8mm|
+| HD VTX Plug                  |
+| :--------------------------- |
+| **F:** 6-way GH 1.25mm |
 
-| Power/UART Socket |
-|:------------------|
-| **D:** 6-way GH 1.25mm|
-| **E:** 5-way GH 1.25mm|
+| Camera Connector                        |
+| :-------------------------------------- |
+| **G:**  20 Pin 0.4mm Pitch (MIPI) |
 
-|   HD VTX Plug    |
-|:-----------------|
-|**F:** 6-way GH 1.25mm|
-
-|      Camera Connector        |                  
-|:-----------------------------|
-| **G:**  20 Pin 0.4mm Pitch (MIPI)|
-                            
-
-|Miscellaneous|
-|:---------------------------------|
-|Keypad PCB Socket: 6-way GH 1.25mm|
-
+| Miscellaneous                      |
+| :--------------------------------- |
+| Keypad PCB Socket: 6-way GH 1.25mm |
