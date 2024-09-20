@@ -2,19 +2,19 @@
 
 ## Summary
 
-|                          VTX | Weight | Size `<BR>`(mm) |  Mounting Pattern  | Voltage Input | Power `</BR>`Consumption |                RF Power Output                | Secured U.FL | Antenna | Tramp/SmartAudio | Keypad | Application |
-| ---------------------------: | -----: | :---------------: | :----------------: | :------------: | :------------------------: | :-------------------------------------------: | :----------: | :-----: | :--------------: | :----: | :---------: |
-|                         AIO5 |   5.7g |     28.5x28.5     | 25.5x25.5 M2(Soft) |   2.5V-4.35V   |             -             |                  25mW,200mW                  |      No      | Dipole |        No        |  Yes  |  TinyWhoop  |
-|                **Eco** |   4.5g |       32x32       | 25.5x25.5 M2(Soft) |     4V-12V     |            5~6W            |                  25mW,200mW                  |     Yes     | Dipole |        No        |  Yes  |  TinyWhoop  |
-|       **Freestyle V2** |  22.3g |       29x30       |      20x20 M2      |     7-25V     |           6~15W           | 25mW,200mW<br />(500mW,1W ***(a)*** ) |     Yes     |  RHCP  |    SmartAudio    |  Yes  |  Freestyle  |
-| **Freestyle V1 (EOL)** |  28.0g |       40x40       |   30x30 M3(Soft)   | 2S-6S***(b)*** |           6~15W           | 25mW,200mW<br />(500mW,1W ***(a)*** ) |     Yes     |  RHCP  |    SmartAudio    |  Yes  |  Freestyle  |
-|            **Race V3** |   5.5g |       28x32       |   20x20 M4(Soft)   |     4V-12V     |            5~6W            |                  25mW,200mW                  |     Yes     |   No   |      Tramp      |   No   |    Race    |
-|       **Race V2(EOL)** |   6.0g |       34x34       |   20x20 M4(Soft)   |     7V-17V     |            5~6W            |                  25mW,200mW                  |     Yes     |   No   |    SmartAudio    |  Yes  |    Race    |
-|       **Race V1(EOL)** |   7.0g |       27x45       |   20x20 M4(Soft)   |     7V-17V     |            5~6W            |                  25mW,200mW                  |     Yes     |   No   |    SmartAudio    |  Yes  |    Race    |
-|         **Whoop Lite** |   4.5g |       32x32       | 25.5x25.5 M2(Soft) |     1S-3S     |            5~6W            |                  25mW,200mW                  |     Yes     |   No   |    SmartAudio    |   No   |  TinyWhoop  |
-|         **Whoop(EOL)** |   5.3g |       32x32       |    25.5x25.5 M2    |     7V-17V     |            5~6W            |                  25mW,200mW                  |      No      |   No   |        No        |  Yes  |    Whoop    |
+|                          VTX | Weight | Size (mm) |  Mounting Pattern  | Voltage Input | Power Consumption |                RF Power Output                | Secured U.FL | Antenna | Tramp/SmartAudio | Keypad | Application |
+| ---------------------------: | -----: | :-------: | :----------------: | :------------: | :---------------: | :-------------------------------------------: | :----------: | :-----: | :--------------: | :----: | :---------: |
+|                         AIO5 |   5.7g | 28.5x28.5 | 25.5x25.5 M2(Soft) |   2.5V-4.35V   |         -         |                  25mW,200mW                  |      No      | Dipole |        No        |  Yes  |  TinyWhoop  |
+|                **Eco** |   4.5g |   32x32   | 25.5x25.5 M2(Soft) |     4V-12V     |       5~6W       |                  25mW,200mW                  |     Yes     | Dipole |        No        |  Yes  |  TinyWhoop  |
+|       **Freestyle V2** |  22.3g |   29x30   |      20x20 M2      |     7-25V     |       6~15W       | 25mW,200mW<br />(500mW,1W ***(a)*** ) |     Yes     |  RHCP  |    SmartAudio    |  Yes  |  Freestyle  |
+| **Freestyle V1 (EOL)** |  28.0g |   40x40   |   30x30 M3(Soft)   | 2S-6S***(b)*** |       6~15W       | 25mW,200mW<br />(500mW,1W ***(a)*** ) |     Yes     |  RHCP  |    SmartAudio    |  Yes  |  Freestyle  |
+|            **Race V3** |   5.5g |   28x32   |   20x20 M4(Soft)   |     4V-12V     |       5~6W       |                  25mW,200mW                  |     Yes     |   No   |      Tramp      |   No   |    Race    |
+|       **Race V2(EOL)** |   6.0g |   34x34   |   20x20 M4(Soft)   |     7V-17V     |       5~6W       |                  25mW,200mW                  |     Yes     |   No   |    SmartAudio    |  Yes  |    Race    |
+|       **Race V1(EOL)** |   7.0g |   27x45   |   20x20 M4(Soft)   |     7V-17V     |       5~6W       |                  25mW,200mW                  |     Yes     |   No   |    SmartAudio    |  Yes  |    Race    |
+|         **Whoop Lite** |   4.5g |   32x32   | 25.5x25.5 M2(Soft) |     1S-3S     |       5~6W       |                  25mW,200mW                  |     Yes     |   No   |    SmartAudio    |   No   |  TinyWhoop  |
+|         **Whoop(EOL)** |   5.3g |   32x32   |    25.5x25.5 M2    |     7V-17V     |       5~6W       |                  25mW,200mW                  |      No      |   No   |        No        |  Yes  |    Whoop    |
 
-**(a)** Only in permitted regions with HAM Licence`<BR>`
+**(a)** Only in permitted regions with HAM Licence
 **(b)** 2nd batch or later
 
 ## **General Consideration for VTX installation**
@@ -72,9 +72,9 @@ HDZero AIO5 is the world’s first digital video AIO, enabling bind and fly 65mm
 
 The HDZero AIO5 is an excellent collaboration between Happymodel and HDZero. It is available at major FPV resellers worldwide, and also at Happymodel and HDZero official online shops.
 
-<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_Aio_intro_1.png" style="width:100">
+<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_Aio5_intro_1.png" style="width:100">
 
-<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_Aio_intro_2.png" style="width:100">
+<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_Aio5_intro_2.png" style="width:100">
 
 #### Specifications
 
@@ -107,9 +107,9 @@ The HDZero AIO5 is an excellent collaboration between Happymodel and HDZero. It 
 
 A line antenna(1/4 wavelength) for the ELRS receiver is pre-soldered and positioned close to the board for low-profile and easy packaging. However, **the ELRS antenna needs to be lifted to a maintain at least 3mm of clearance from the board**.
 
-<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_Aio_elrs_antenna_1.png" style="width:100">
+<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_Aio5_elrs_antenna_1.png" style="width:100">
 
-<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_Aio_elrs_antenna_2.png" style="width:100">
+<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_Aio5_elrs_antenna_2.png" style="width:100">
 
 ##### VTX antenna
 
@@ -117,7 +117,7 @@ The HDZero VTX integrated into the AIO5 has a specific requirement to prevent vi
 
 **The VTX antenna should be mounted outward, not inward, on the board.**
 
-<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_Aio_vtx_antenna.png" style="width:100">
+<img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_Aio5_vtx_antenna.png" style="width:100">
 
 ### HDZero Eco Video Video Transmitter
 
