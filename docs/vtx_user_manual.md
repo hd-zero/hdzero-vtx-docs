@@ -124,8 +124,8 @@ All HDZero VTXes have the following settings for its RF power level management. 
 ### TEAM_RACE
 
 - **OFF:** The RF power of VTXs after power-on is determined by other settings.
-- **MODE1:** VTX RF remains off (0mW) after power-up, and exits 0mW under the following conditions: 1. Quad is armed. 2. Exit 0mw mode through stick command. 3. Configure VTX power to non-0mW through FC UART or SmartAudio. If the UART communication between VTX and FC is disconnected, VTX will turn off the RF until UART communication is restored and repower the VTX.
-- **MODE2**: VTX RF remains off(0mW) after power-up, and exits 0mW under the following conditions: 1. Quad is armed. 2. Exit 0mw mode through stick command. 3. Configure VTX power to non-0mW through FC.
+- **MODE1:** VTX RF remains off (0mW) after power-up, and exits 0mW under the following conditions: 1. Exit 0mw mode through stick command. 2. Configure VTX power to non-0mW through FC UART or SmartAudio. If the UART communication between VTX and FC is disconnected, VTX will turn off the RF until UART communication is restored and repower the VTX.
+- **MODE2**: VTX RF remains off(0mW) after power-up, and exits 0mW under the following conditions: 1. Exit 0mw mode through stick command. 2. Configure VTX power to non-0mW through FC.
 
 ### SHORTCUTS
 
