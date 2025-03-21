@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Troubleshoot - HDZero VTX Docs</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../hdzeroextra.css" rel="stylesheet" />
+        <link href="../css/version-select.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Troubleshoot";
+        var mkdocs_page_input_path = "vtx_troubleshoot.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> HDZero VTX Docs
+        </a>
+        <div class="version">
+          version
+        </div><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../vtx_targets/">VTX Target</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../camera_targets/">Camera Target</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../vtx_user_manual/">User Manual</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Troubleshoot</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#no-rf-output">No RF output</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#description">Description</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#solutions">Solutions</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#received-video-exception">Received video exception</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#desciption">Desciption</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#solutions_1">Solutions</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#osd-is-not-display">OSD is not display</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#description_1">Description</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#solutions_2">Solutions</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#osd-display-unstable">OSD display unstable</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#description_2">Description</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#solutions_3">Solutions</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#snowflakes-at-close-range">Snowflakes at close range</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#description_3">Description</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#solutions_4">Solutions</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#vtx-cannot-update-firmware">VTX cannot update firmware</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#description_4">Description</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#solutions_5">Solutions</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#vtx-interferes-with-gps">VTX interferes with GPS</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#description_5">Description</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#solutions_6">Solutions</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#fc-dropping-to-bootloader">FC dropping to bootloader</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#description_6">Description</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#solutions_7">Solutions</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">HDZero VTX Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Troubleshoot</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/hd-zero/hdzero-vtx-docs/blob/main/docs/vtx_troubleshoot.md" class="icon icon-github"> Edit on Github</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="troubleshoot">Troubleshoot</h1>
+<h2 id="no-rf-output">No RF output</h2>
+<h3 id="description">Description</h3>
+<ul>
+<li>VRX/Goggle cannot scan the VTX signal</li>
+</ul>
+<h3 id="solutions">Solutions</h3>
+<h4 id="1-re-update-firmware">1. Re-update firmware</h4>
+<ul>
+<li>Update to the latest version.</li>
+<li>Make sure the firmware types matches your VTX.</li>
+</ul>
+<h4 id="2-check-the-red-and-blue-led-status">2. Check the red and blue LED status</h4>
+<h5 id="1-the-red-led-is-off-or-unstable">1). The red LED is off or unstable</h5>
+<p>The red LED is directly driven by the system's 5V power supply. If the red LED is not lit and stable, it is usually because there is a problem with the power supply.</p>
+<ul>
+<li>Make sure the voltage and maximum current of the power supply are within the specifications.</li>
+<li>Check if any components are cracked.</li>
+<li>There may be a fault with your VTX's power supply system, you can use a multimeter to measure the voltage test pad to verify it if you have the hardware knowledge.</li>
+</ul>
+<h5 id="2-the-blue-led-never-lights-up">2). The blue LED never lights up</h5>
+<p>When the 5680 is initializing, in normal operation, it will first configure the blue LED to be on to indicate that the 5680 mcu has started.  If it does not, check the following:</p>
+<ul>
+<li>If you plug in the Quad battery while the FC is connected to the PC, the VTX may fail to boot although this does not happen often.</li>
+<li>There may be a fault with your VTX's power supply system, you can use a multimeter to measure the voltage test points to verify it if you have the hardware knowledge.</li>
+</ul>
+<h5 id="3-the-blue-led-stays-on">3). The blue LED stays on</h5>
+<p>Check the following:</p>
+<ul>
+<li>Replace other camera or MIPI cable.</li>
+<li>Check whether the pins of the MIPI socket are clean and intact and ensure that the MIPI cable is properly clipped into place.</li>
+<li>Check whether the pins of the 5680 chip are clean.</li>
+<li>Use the colorbar firmware to test to make sure the RF part works properly.</li>
+</ul>
+<h5 id="4-the-blue-led-flashes-2-short-14s-pulses-every-four-seconds-camera-not-detected">4). The blue LED flashes 2 short (1/4s) pulses every four seconds (Camera not detected)</h5>
+<p>At the end of VTX initialization, if the camera is not detected, the blue LED will flash the pattern described.
+(The foxeer digisight v3 camera may not show as detected but this does not affect the VTX output RF.)</p>
+<p>Check the following:</p>
+<ul>
+<li>Replace other camera or MIPI cable.</li>
+<li>Check whether the pins of the MIPI socket are clean and intact and ensure that the MIPI cable is properly clipped into place.</li>
+<li>Check whether the pins of the 5680 chip are clean.</li>
+</ul>
+<h5 id="5-the-blue-led-flashes-3-short-14s-pulses-every-four-seconds-overheat-protection">5). The blue LED flashes 3 short (1/4s) pulses every four seconds (Overheat protection)</h5>
+<p>The VTX does not normally overheat when moving through air.
+If using the VTX on a bench always use a fan too aid cooling, otherwise try switching to a lower power mode.</p>
+<p>Note : For HDZ Freestyle V1/V2, if the VTX overheats, the RF will be automatically shut down until the Quad is armed or repowered.</p>
+<h5 id="6-the-blue-led-flashes-4-short-14s-pulses-every-four-seconds-rf-chip-failure">6). The blue LED flashes 4 short (1/4s) pulses every four seconds (RF chip failure)</h5>
+<p>Your VTX's RF chip dm6300 is damaged, at least it no longer responds to dm5680.</p>
+<h5 id="7-the-blue-led-flashes-1-long-1s-and-1-short-14s-pulses-every-four-seconds-0mw-mode">7). The blue LED flashes 1 long (1s) and 1 short (1/4s) pulses every four seconds (0mW mode)</h5>
+<p>Your VTX may be in 0mw mode. You can exit using the following method:</p>
+<ul>
+<li>Quad + VTX power on</li>
+<li>Connect Quad to Betaflight configurator</li>
+<li>Enter VTX page, set power from 0mw to others</li>
+</ul>
+<h5 id="8-the-blue-led-flashes-1-long-1s-and-2-short-14s-pulses-every-four-seconds-pit-mode">8). The blue LED flashes 1 long (1s) and 2 short (1/4s) pulses every four seconds (Pit mode)</h5>
+<p>Your VTX may be in Pit mode. You can exit using the following method:</p>
+<ul>
+<li>Quad + VTX power on</li>
+<li>Connect Quad to Betaflight configurator</li>
+<li>Enter VTX page, set Pitmode to Off</li>
+</ul>
+<h2 id="received-video-exception">Received video exception</h2>
+<h3 id="desciption">Desciption</h3>
+<ul>
+<li>There is noise at the edge of the object.</li>
+<li>Color is wrong.</li>
+</ul>
+<h3 id="solutions_1">Solutions</h3>
+<h4 id="1-re-update-firmware_1">1. Re-update firmware</h4>
+<ul>
+<li>Update to the latest version.</li>
+<li>Make sure the firmware types matches your VTX.</li>
+</ul>
+<h4 id="2-enter-the-camera-menu-reset-and-save">2. Enter the camera menu, reset and save</h4>
+<h4 id="3-check-vtx-pcb">3. Check VTX PCB</h4>
+<ul>
+<li>Check whether the pins of the mipi socket are intact and ensure that the mipi cable is fastened.</li>
+<li>Check whether the pins of the 5680 chip are clean.</li>
+</ul>
+<h4 id="4-cross-testing">4. Cross testing</h4>
+<p>Replace the VTX, camera, and  cables respectively to identify where the problem lies.</p>
+<h4 id="5-check-power-supply">5. Check power supply</h4>
+<p>An unclean power supply may cause the camera to have the wrong color.</p>
+<p>Please use a DC stabilized voltage source for testing or use a battery for direct power supply.</p>
+<h2 id="osd-is-not-display">OSD is not display</h2>
+<h3 id="description_1">Description</h3>
+<h3 id="solutions_2">Solutions</h3>
+<h4 id="1-re-update-firmware_2">1. Re-update firmware</h4>
+<ul>
+<li>Update to the latest version.</li>
+<li>Make sure the firmware types matches your VTX.</li>
+</ul>
+<h4 id="2-check-hardware-connections">2. Check hardware connections</h4>
+<ul>
+<li><strong>VTX TX</strong> connects to <strong>FC RX</strong></li>
+<li><strong>VTX RX</strong> connects to <strong>FC TX</strong></li>
+<li>Do not connect VTX to the FC's soft serial port.</li>
+<li>Try other FC UART ports.</li>
+</ul>
+<h4 id="3-check-fc-configuration">3. Check FC configuration</h4>
+<h5 id="1-set-the-function-of-the-fc-serial-port-occupied-by-vtx-save-and-restart">1). Set the function of the FC serial port occupied by VTX, save and restart.</h5>
+<ul>
+<li>For Betaflight, you need to set uart peripheral to <strong>VTX(MSP+DISPLAYPORT).</strong> The picture below shows setting UART3 to OSD.</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/Betaflight_port_config.png" style="width:100"></p>
+<ul>
+<li>For iNav, you need to set uart Peripheral to <strong>MSP DisplayPort</strong>. The picture below shows setting UART5 to OSD.</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/iNav_port_config.png" style="width:100"></p>
+<h5 id="2-unsupported-osd-items">2). Unsupported OSD items</h5>
+<p>There are some OSD items that require hardware support to actually be enabled, which depends on FC rather than VTX. For example, OSD items related to GPS can only be displayed when FC actually detects the GPS module.</p>
+<h2 id="osd-display-unstable">OSD display unstable</h2>
+<h3 id="description_2">Description</h3>
+<ul>
+<li>OSD flashing</li>
+<li>OSD VTX channel/pwr display <strong>?:?:?</strong></li>
+<li>OSD refresh slowly</li>
+<li>Wrong OSD location</li>
+</ul>
+<h3 id="solutions_3">Solutions</h3>
+<h4 id="1-re-update-firmware_3">1. Re-update firmware</h4>
+<ul>
+<li>Update to the latest version.</li>
+<li>Make sure the firmware types matches your VTX.</li>
+</ul>
+<h4 id="2-reduce-osd-items">2. Reduce OSD items</h4>
+<p>If too many OSD items are turned on, the carrying capacity of the uart may be exceeded, which may cause individual OSD items to be unable to be displayed.</p>
+<h4 id="3-close-smartaudio">3. Close SmartAudio</h4>
+<p>It is normal for the OSD to flash when SmartAudio is configuring VTX. Please turn off SmartAudio if you don't need it.</p>
+<h2 id="snowflakes-at-close-range">Snowflakes at close range</h2>
+<h3 id="description_3">Description</h3>
+<h3 id="solutions_4">Solutions</h3>
+<h4 id="1-re-update-firmware_4">1. Re-update firmware</h4>
+<ul>
+<li>Update to the latest version.</li>
+<li>Make sure the firmware types matches your VTX.</li>
+</ul>
+<h4 id="2-check-vtx-configuration">2. Check VTX configuration</h4>
+<p>Make sure pit mode is off</p>
+<h4 id="3-avoid-rf-interference">3. Avoid RF interference</h4>
+<ul>
+<li>There may be interference sources in the current channel. Switch to other channels.</li>
+<li>The RF power of the remote control tuner is too high. Make sure the turner is at least 20cm away from Goggle or VRX.</li>
+<li>When VTX and VRX or Goggle are too close (less than 1 meter), it is normal for a small amount of snowflakes to appear.</li>
+</ul>
+<h4 id="4-build-quad-correctly">4. Build Quad Correctly</h4>
+<ul>
+<li>Check whether the VTX antenna is installed securely. Try to make sure that the antenna is not blocked by the carbon fiber of the quad or the battery.</li>
+<li>Replace other antenna for VTX.</li>
+<li>The top of VTX should be at least 1cm away from the carbon fiber.</li>
+<li>Add filter capacitors to your Quad.</li>
+</ul>
+<h4 id="5-check-vtx-hardware">5. Check VTX hardware</h4>
+<ul>
+<li>Check the front and back of the VTX to see if any components are cracked or falling off.</li>
+<li>Check whether the PA is damaged.</li>
+<li>For Freestyle V1 VTX, when the power is off, measure whether the two test points named 5V0 on the front are short-circuited to ground. If short-circuited, it means the PA is damaged.
+    <img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_FreestyleV1_PD.png" /></li>
+<li>For Freestyle V2 VTX, If after powering on, the red light in the position shown below lights up, it indicates that the PA has been damaged.<img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_FreestyleV1_PD.png" /></li>
+<li>For other VTXes. Measure the voltage from test point PD to GND in the power-on state. Generally, when PD is less than 0.2V, the PA is considered to be working abnormally.<ul>
+<li>HDZero Whoop VTX
+  <img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_Whoop_PD.png" /></li>
+<li>HDZero WhoopLite VTX
+  <img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_WhoopLite_PD.png" /></li>
+<li>HDZero Race V1 VTX
+  <img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_RaceV1_PD.png" /></li>
+<li>HDZero Race V2 VTX
+  <img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_RaceV2_PD.png" /></li>
+<li>HDAZero Race V3 VTX
+  <img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/HDZero_RaceV3_PD.png" /></li>
+</ul>
+</li>
+</ul>
+<h2 id="vtx-cannot-update-firmware">VTX cannot update firmware</h2>
+<h3 id="description_4">Description</h3>
+<ul>
+<li>PC/Goggle/VRX cannot detect VTX.</li>
+<li>VRX does not start updating VRX.</li>
+<li>Foxeer VTX cannot be updated by HDZero Programmer or Goggle</li>
+</ul>
+<h3 id="solutions_5">Solutions</h3>
+<h4 id="1-make-sure-the-sd-card-is-formatted-as-fat32">1. Make sure the SD card is formatted as FAT32.</h4>
+<h4 id="2-make-sure-the-pin-pin-of-the-upgrade-socket-is-intact">2. Make sure the PIN pin of the upgrade socket is intact.</h4>
+<ul>
+<li>Bad socket
+  <img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/bad_upgrade_socket.jpg" /></li>
+<li>good socket
+  <img alt="img" src="https://raw.githubusercontent.com/hd-zero/hdzero-vtx-docs/main/img/good_upgrade_socket.jpg" /></li>
+</ul>
+<h4 id="3-updated-hdzero-programmer-to-support-foxeer-vtx">3. Updated HDZero Programmer to support Foxeer VTX.</h4>
+<h4 id="4-goggle-does-not-currently-support-updating-foxeer-vtx">4. Goggle does not currently support updating Foxeer VTX.</h4>
+<h4 id="5-if-you-have-a-keypad-plugged-in-remove-it">5. If you have a keypad plugged in, remove it.</h4>
+<h2 id="vtx-interferes-with-gps">VTX interferes with GPS</h2>
+<h3 id="description_5">Description</h3>
+<p>After turning on VTX RF, the GPS will lose 4~5 satellites.</p>
+<h3 id="solutions_6">Solutions</h3>
+<h4 id="1-the-vtx-installation-location-is-far-away-from-the-gps-module">1. The VTX installation location is far away from the GPS module.</h4>
+<h4 id="2-keep-the-vtx-antenna-away-from-the-gps-module">2. Keep the VTX antenna away from the GPS module.</h4>
+<h2 id="fc-dropping-to-bootloader">FC dropping to bootloader</h2>
+<h3 id="description_6">Description</h3>
+<p>In versions of Betaflight prior to 4.4.2, when MSP+OSD is enabled on a uart connected to an HDZero VTX and the VTX is unpowered (such as when configuring with only USB power), the FC will be prone to crash to DFU mode when switching pages in Configurator.
+A discussion of this problem can be seen <a href="https://github.com/betaflight/betaflight/issues/12723">here</a></p>
+<p>INav is unaffected.</p>
+<h3 id="solutions_7">Solutions</h3>
+<h4 id="1-upgrade-to-betaflight-442-or-later">1. Upgrade to Betaflight 4.4.2 or later</h4>
+<h4 id="2-a-work-around-for-this-problem-was-to-add-a-200ohm-resistor-between-the-wire-from-fc-uarttx-to-vtx-uartrx">2. A work around for this problem was to add a 200ohm resistor between the wire from FC UART.TX to VTX UART.RX</h4>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../vtx_user_manual/" class="btn btn-neutral float-left" title="User Manual"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../about/" class="btn btn-neutral float-right" title="About">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../vtx_user_manual/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../about/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+      <script src="../js/version-select.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
