@@ -53,6 +53,7 @@ During the initialization phase, VTX will detect whether the serial port can cor
 
 - Betaflight >= v4.4.0
 - iNav >= 4.1.0
+- KISS ULTRA >= 2.0.1-B35
 - FlightOne >= 10.1.1.5576 | 10.1 Alpha 29
 
 ### Update VTX and VRX/Goggle firmware
