@@ -18,30 +18,32 @@ You may need to add mike path to env path. To check the installation location wi
 pip show mike
 ```
 
-### Release version
-
-```
-mike deploy --push --update-aliases x.y.z latest
-```
-
-```
-mike set-default --push latest
-```
-
 ### Update a version
 
 ```
-mike deploy x.y.z --push
+mike deploy x.y.z --push --branch gh-pages
+```
+
+### Release version as latest
+
+```
+mike alias x.y.z latest --push --update-aliases --branch gh-pages
 ```
 
 ### Delete a version
 
 ```
-mike delete x.y.z --push
+mike delete x.y.z --push --branch gh-pages
 ```
 
 ### Browse locally
 
 ```
 mike serve
+```
+
+### Show verion list
+
+```
+mike list
 ```
