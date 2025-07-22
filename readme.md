@@ -9,7 +9,7 @@ Open up [https://hd-zero.github.io/hdzero-vtx-docs/latest](https://hd-zero.githu
 ### Install mkdocs and mike
 
 ```
-pip installer mkdocs mike
+pip install mkdocs mike
 ```
 
 ### Release version
