@@ -12,6 +12,12 @@ Open up [https://hd-zero.github.io/hdzero-vtx-docs/latest](https://hd-zero.githu
 pip install mkdocs mike
 ```
 
+You may need to add mike path to env path. To check the installation location with:
+
+```
+pip show mike
+```
+
 ### Release version
 
 ```
